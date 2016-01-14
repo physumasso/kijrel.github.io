@@ -3,9 +3,8 @@
   
   app.controller('MembresCa', ['$http', function($http){
     var equipe = this;
-    alert('test');
     equipe.membres = [];
-    $http.get('/v_beta/json/membres-exec.json').success(function(data){
+    $http.get('/kijrel.github.io/json/membres-exec.json').success(function(data){
       equipe.membres=data;
     });
   }]);
@@ -30,7 +29,7 @@
   app.controller('AlbumCtrlTest', ['$http', function($http){
     var scope = this;
     scope.albums = [];
-    $http.get('/v_beta/json/albums.json').success(function(data){
+    $http.get('/kijrel.github.io/json/albums.json').success(function(data){
       scope.albums=data;
     });
     this.tab=1;
