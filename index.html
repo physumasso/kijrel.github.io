@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal">
+    <meta name="author" content="Aude Forcione-Lambert - kijrel@gmail.com">
+    <!-- basé sur le thème de Carlos Alvarez - Alvarez.is - blacktie.co -->
+    <!-- voir http://www.bootstrapzero.com/bootstrap-template/shield pour version originale du thème -->
+    <link rel="icon" href="img/logo_physum/logo3_cou.svg">
+
+    <title>PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link href="css/animate-custom.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="js/jquery.min.js"></script>
+	  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+	  
+	  <!-- Angular.js files -->
+	  <!-- Utiliser quand le développement est terminé
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	  -->
+	  <script type="text/javascript" src="js/angular.js"></script>
+	  <script type="text/javascript" src="js/app-angular.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!--<script type="text/javascript" src="jquery-1.4.2.js"></script>-->
+    
+    
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main"  ng-app="physum">
+    
+    <div id="navbar-main">
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon icon-physum" style="font-size:30px; color:#3498db;"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#accueil" class="smoothScroll">Accueil</a></li>
+              <li><a href="#a_propos" class="smoothScroll">À propos</a></li>
+        			<li><a href="#ca" class="smoothScroll">CA</a></li>
+        			<li><a href="#planck" class="smoothScroll">Planck</a></li>
+        			<li><a href="#commites" class="smoothScroll">Commités</a></li>
+        		</ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div><!-- /.navbar-main -->
+    
+  	<!-- ==== HEADERWRAP ==== -->
+    <div id="headerwrap" id="accueil" name="accueil">
+  		<header class="clearfix">
+  	 		<h1><span class="icon icon-physum" style="font-size:150px;"></span></h1>
+  	 		<p>PHYSUM</p>
+  	 		<p>Association des étudiants et étudiates en physique de l'Université de Montréal</p>
+  		</header>	    
+    </div><!-- /headerwrap -->
+    
+    <!-- ==== ABOUT ==== -->
+    <div class="light_bg">
+  		<div class="container light_bg" id="a_propos" name="a_propos">
+  			<div class="row white">
+  			  <br>
+  				<h1 class="centered">QUI SOMMES NOUS?</h1>
+  				<hr>
+  				
+  				<div class="col-lg-6">
+  					<p>L'Association des étudiants et étudiantes en physique de l'Université de Montréal (PHYSUM) représente les étudiants en physique de l'Université de Montréal depuis 1986. Toute personne inscrite au baccalauréat, à la majeure, à la mineure, à la maîtrise ou au doctorat en physique, physique-informatique ou mathématique-physique à l’Université de Montréal, est automatiquement membre de la PHYSUM.</p>
+  				</div><!-- col-lg-6 -->
+  				
+  				<div class="col-lg-6">
+  					<p>La PHYSUM poursuit les buts suivants:
+  					<ul>
+  					  <li>représenter les intérêts des membres, tels que définis par l'Assemblée générale, auprès des corps professoral et administratif;</li>
+  					  <li>promouvoir la formation et le maintien d'un niveau de vie sociale intéressant pour les membres.</li>
+  					</ul>
+            Étant accréditée, la PHYSUM dispose du droit d'envoyer des représentants dans plusieurs comités du Département de Physique. Les membres qui nous représentent ainsi sont élus lors d'une Assemblée Générale. Nous pouvons ainsi contribuer à l'orientation et au fonctionnement du département.</p>
+  				</div><!-- col-lg-6 -->
+  			</div><!-- row -->
+  		</div><!-- container -->
+		</div>
+		
+		<!-- ==== SECTION DIVIDER1 -->
+		<section class="section-divider textdivider divider1">
+			<div class="container">
+				<h1>VENEZ RENCONTRER NOTRE ÉQUIPE</h1>
+				<hr>
+				<p>Le conseil d'administration s'occupe du bien être des élèves. N'hésitez pas à nous contacter si vous avez besoin d'aide ou si vous avez des questions.</p>
+			</div><!-- container -->
+		</section><!-- section -->
+    
+    <!-- ==== TEAM MEMBERS ==== -->
+    <div class="dark_bg">
+  		<div class="container" id="ca" name="ca" ng-controller="MembresCa as membresca">
+  		  <br>
+  		  <div class="row white centered" ng-controller="TabController as tab">
+  				<h1 class="centered">LES MEMBRES DU C.A. SONT LÀ POUR VOUS</h1>
+  				<hr>
+  				<br>
+  			  <br>
+  			  
+  			  <div ng-repeat="mod in [0,1,2,3]">
+    				<div class="col-lg-3 centered">
+    				  <div class="membre light_bg rounded" ng-repeat="membre in membresca.membres" ng-if="$index%4==mod">
+      					<br>
+      					<h3>{{membre.titre}}</h3>
+      					<div class="ca-img" ng-if="membre.nom_adj!=''">
+      				    <img class="img img-circle img-thumbnail ca-img-elu" src="img/team/{{membre.image}}.jpg" alt="">
+        				  <img class="img img-circle img-thumbnail ca-img-adj" src="img/team/{{membre.image_adj}}.jpg" alt="">
+      				  </div>
+      				  <div class="ca-img" ng-if="membre.nom_adj==''">
+      				    <img class="img img-circle img-thumbnail ca-img-unique" src="img/team/{{membre.image}}.jpg" alt="">
+      				  </div>
+      					
+    					  
+        				<div ng-class="{active: tab.isSet($index)}">
+                  <a href class="btn btn-default" ng-click="tab.setTab($index)">Description</a></li>
+                </div>
+                
+                <div ng-show="tab.isSet($index)">
+                  <h4><b>{{membre.nom}}</b></h4>
+        					<a href="#" class="icon icon-facebook" style="font-size:25px;"></a>
+        					<a href="#" class="icon icon-mail" style="font-size:25px;"></a>
+        					<br>
+        					<div ng-if="membre.nom_adj!=''">
+        					  <h4>adjoint(e)</h4>
+          					<h4><b>{{membre.nom_adj}}</b></h4>
+          					<a href="#" class="icon icon-facebook" style="font-size:25px;"></a>
+          					<a href="#" class="icon icon-mail" style="font-size:25px;"></a>
+        					</div>
+      					  <br>
+      					  <p>{{membre.description}}</p>
+      					  <br>
+                </div>
+      					
+      					<hr>
+      					<br>
+      					
+      				</div>
+    				</div><!-- col-lg-3 -->
+  				</div>
+  				
+  			</div><!-- row -->
+  		</div><!-- container -->
+  	</div>
+		
+		<!-- ==== Planck -->
+		<div class="light_bg">
+  		<div class="container" id="planck" name="planck">
+  		  <br>
+  		  <br>
+  		  <h1 class="centered">LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
+  		  <hr>
+  		  <br>
+  		  <div class="col-lg-4">
+      		<p><span class="icon icon-position" style="font-size:20px; color:#3498db;"></span> D-400 Roger-Gaudry</p>
+  		  </div>
+  		  <div class="col-lg-4">
+  		    <p><span class="icon icon-horloge" style="font-size:20px; color:#3498db;"></span> 8h30 à 17h30 du lundi au vendredi</p>
+  		  </div>
+  		  <div class="col-lg-4">
+  		    <p><span class="icon icon-telephone" style="font-size:20px; color:#3498db;"></span> 514-343-6111, poste 1614</p>
+  		  </div>
+  		  <br>
+  		  
+  		  <div class="container">
+  		    
+    		  <div class="col-lg-4 callout">
+    		    <img class="img-responsive" src="img/portfolio/dummy.jpg" alt="">
+    		  </div>
+    		  
+    		  <div class="col-lg-8 ">
+    		    <p>
+    		      La Planck est le café étudiant du département de physique. Il est situé au local D-400 du pavillon Roger-Gaudry. Il offre une ambiance agréable pour discuter ou faire ses devoirs. De plus, sandwich, pâtisseries, café et bien plus sont servis pour satisfaire votre appétit.
+    		    </p>
+    		    <p>
+              Les heures d'ouverture de La Planck sont de 8h30 à 17h30. Il est aussi possible d'être à La Planck à toute heure entre 6h et 23h: Contactez un membre du Conseil d'Administration pour savoir comment entrer si la porte est fermée. Notez que le service alimentaire n'est offert que pendant les heures d'ouvertures officielles; mais qu'un four à micro-ondes, un grille pain, et une bouilloire sont en libre-service.
+            </p>
+
+    		  </div>
+    		  
+  		  </div>
+  		    
+    		  <div class="container">
+    		  
+    		  <div class="col-lg-8 callout">
+    		    <p>
+              La Planck fonctionne grâce à l'implication assidue d'une cinquantaine de bénévoles. Sans eux, il n'y aurait personne pour vous servir! Au début de chaque session, les membres du Conseil Exécutif de La Planck sont à la recherche de bénévoles pour la sesssion à venir: Inscrivez-vous et contribuez à la vie de votre association! Pour vous remercier de votre implication, à la fin de chaque session, La Planck invite, à ses frais, ses bénévoles à un souper pour les remercier de leur implication.
+      		  </p>
+    			</div>
+    			
+    		  <div class="col-lg-4 callout">
+    		    <img class="img-responsive" src="img/portfolio/dummy.jpg" alt="">
+    		  </div>
+  			  
+  		  </div>
+  		</div>
+		</div>
+		
+		<!-- ==== SECTION DIVIDER3 -->
+		<section class="section-divider textdivider divider1">
+			<div class="container">
+				<h1>division</h1>
+				<hr>
+				<p>division</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+				<!-- ==== PORTFOLIO ==== -->
+		<div class="dark_bg">
+  		<div class="container" id="commites" name="commites">
+  		<br>
+  			<div class="row">
+  				<br>
+  				<h1 class="centered">DÉCOUVRE NOS COMMITÉS</h1>
+  				<hr>
+  				<br>
+  				<br>
+  			</div><!-- /row -->
+  			
+  		</div>
+  	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		
+
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/retina.js"></script>
+  	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+	  <script type="text/javascript" src="js/jquery-func.js"></script>
+    
+  </body>
+</html>
