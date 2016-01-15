@@ -26,14 +26,12 @@
     };
   });
   
-  app.controller('AlbumCtrlTest', ['$http', function($http){
+  app.controller('Comites', ['$http', function($http){
     var scope = this;
-    scope.albums = [];
-    $http.get('/kijrel.github.io/json/albums.json').success(function(data){
-      scope.albums=data;
+    scope.com = [];
+    $http.get('/kijrel.github.io/json/comites.json').success(function(data){
+      scope.com=data;
     });
-    this.tab=1;
-    
   }]);
   
 })();

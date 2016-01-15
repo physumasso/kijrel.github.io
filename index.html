@@ -59,7 +59,7 @@
               <li><a href="#a_propos" class="smoothScroll">À propos</a></li>
         			<li><a href="#ca" class="smoothScroll">CA</a></li>
         			<li><a href="#planck" class="smoothScroll">Planck</a></li>
-        			<li><a href="#commites" class="smoothScroll">Commités</a></li>
+        			<li><a href="#comites" class="smoothScroll">Comités</a></li>
         		</ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -124,11 +124,11 @@
       					<br>
       					<h3>{{membre.titre}}</h3>
       					<div class="ca-img" ng-if="membre.nom_adj!=''">
-      				    <img class="img img-circle img-thumbnail ca-img-elu" src="img/team/{{membre.image}}.jpg" alt="">
-        				  <img class="img img-circle img-thumbnail ca-img-adj" src="img/team/{{membre.image_adj}}.jpg" alt="">
+      				    <img class="img img-circle img-thumbnail ca-img-elu" src="img/team/{{membre.image}}" alt="">
+        				  <img class="img img-circle img-thumbnail ca-img-adj" src="img/team/{{membre.image_adj}}" alt="">
       				  </div>
       				  <div class="ca-img" ng-if="membre.nom_adj==''">
-      				    <img class="img img-circle img-thumbnail ca-img-unique" src="img/team/{{membre.image}}.jpg" alt="">
+      				    <img class="img img-circle img-thumbnail ca-img-unique" src="img/team/{{membre.image}}" alt="">
       				  </div>
       					
     					  
@@ -138,14 +138,22 @@
                 
                 <div ng-show="tab.isSet($index)">
                   <h4><b>{{membre.nom}}</b></h4>
-        					<a href="#" class="icon icon-facebook" style="font-size:25px;"></a>
-        					<a href="#" class="icon icon-mail" style="font-size:25px;"></a>
+                  <div ng-if="membre.facebook!=''">
+        					  <a href="{{membre.facebook}}" class="icon icon-facebook" style="font-size:25px;"></a>
+        					</div>
+        					<div ng-if="membre.courriel!=''">
+        					  <a href="{{membre.courriel}}" class="icon icon-mail" style="font-size:25px;"></a>
+        					</div>
         					<br>
         					<div ng-if="membre.nom_adj!=''">
         					  <h4>adjoint(e)</h4>
           					<h4><b>{{membre.nom_adj}}</b></h4>
-          					<a href="#" class="icon icon-facebook" style="font-size:25px;"></a>
-          					<a href="#" class="icon icon-mail" style="font-size:25px;"></a>
+          					<div ng-if="membre.facebook_adj!=''">
+          					  <a href="{{membre.facebook_adj}}" class="icon icon-facebook" style="font-size:25px;"></a>
+          					</div>
+          					<div ng-if="membre.courriel_adj!=''">
+          					  <a href="{{membre.courriel_adj}}" class="icon icon-mail" style="font-size:25px;"></a>
+          					</div>
         					</div>
       					  <br>
       					  <p>{{membre.description}}</p>
@@ -185,7 +193,7 @@
   		  <div class="container">
   		    
     		  <div class="col-lg-4 callout">
-    		    <img class="img-responsive" src="img/portfolio/dummy.jpg" alt="">
+    		    <img class="img-responsive" src="img/portfolio/planck1.jpg" alt="">
     		  </div>
     		  
     		  <div class="col-lg-8 ">
@@ -209,7 +217,7 @@
     			</div>
     			
     		  <div class="col-lg-4 callout">
-    		    <img class="img-responsive" src="img/portfolio/dummy.jpg" alt="">
+    		    <img class="img-responsive" src="img/portfolio/planck2.jpg" alt="">
     		  </div>
   			  
   		  </div>
@@ -227,11 +235,11 @@
 		
 				<!-- ==== PORTFOLIO ==== -->
 		<div class="dark_bg">
-  		<div class="container" id="commites" name="commites">
+  		<div class="container" id="comites" name="comites">
   		<br>
   			<div class="row">
   				<br>
-  				<h1 class="centered">DÉCOUVRE NOS COMMITÉS</h1>
+  				<h1 class="centered">DÉCOUVRE NOS COMITÉS</h1>
   				<hr>
   				<br>
   				<br>
