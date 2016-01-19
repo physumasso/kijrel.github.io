@@ -108,7 +108,7 @@
 			</div><!-- container -->
 		</section><!-- section -->
     
-    <!-- ==== TEAM MEMBERS ==== -->
+    <!-- ==== MEMBRES DU CA ==== -->
     <div class="dark_bg">
   		<div class="container" id="ca" name="ca" ng-controller="MembresCa as membresca">
   		  <br>
@@ -149,10 +149,10 @@
         					  <h4>adjoint(e)</h4>
           					<h4><b>{{membre.nom_adj}}</b></h4>
           					<div ng-if="membre.facebook_adj!=''">
-          					  <a href="{{membre.facebook_adj}}" class="icon icon-facebook" style="font-size:25px;"></a>
+          					  <a href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook" style="font-size:25px;"></a>
           					</div>
           					<div ng-if="membre.courriel_adj!=''">
-          					  <a href="{{membre.courriel_adj}}" class="icon icon-mail" style="font-size:25px;"></a>
+          					  <a href="{{membre.courriel_adj}}" target="_blank" class="icon icon-mail" style="font-size:25px;"></a>
           					</div>
         					</div>
       					  <br>
@@ -175,78 +175,106 @@
 		<div class="light_bg">
   		<div class="container" id="planck" name="planck">
   		  <br>
-  		  <br>
-  		  <h1 class="centered">LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
-  		  <hr>
-  		  <br>
-  		  <div class="col-lg-4">
-      		<p><span class="icon icon-position" style="font-size:20px; color:#3498db;"></span> D-400 Roger-Gaudry</p>
-  		  </div>
-  		  <div class="col-lg-4">
-  		    <p><span class="icon icon-horloge" style="font-size:20px; color:#3498db;"></span> 8h30 à 17h30 du lundi au vendredi</p>
-  		  </div>
-  		  <div class="col-lg-4">
-  		    <p><span class="icon icon-telephone" style="font-size:20px; color:#3498db;"></span> 514-343-6111, poste 1614</p>
-  		  </div>
-  		  <br>
-  		  
-  		  <div class="container">
-  		    
-    		  <div class="col-lg-4 callout">
-    		    <img class="img-responsive" src="img/portfolio/planck1.jpg" alt="">
+  		  <div class="row white centered">
+    		  <h1 class="centered">LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
+    		  <hr>
+    		  <br>
+    		  <div class="col-lg-4">
+        		<p><span class="icon icon-position" style="font-size:20px; color:#3498db;"></span> D-400 Roger-Gaudry</p>
     		  </div>
-    		  
-    		  <div class="col-lg-8 ">
-    		    <p>
-    		      La Planck est le café étudiant du département de physique. Il est situé au local D-400 du pavillon Roger-Gaudry. Il offre une ambiance agréable pour discuter ou faire ses devoirs. De plus, sandwich, pâtisseries, café et bien plus sont servis pour satisfaire votre appétit.
-    		    </p>
-    		    <p>
-              Les heures d'ouverture de La Planck sont de 8h30 à 17h30. Il est aussi possible d'être à La Planck à toute heure entre 6h et 23h: Contactez un membre du Conseil d'Administration pour savoir comment entrer si la porte est fermée. Notez que le service alimentaire n'est offert que pendant les heures d'ouvertures officielles; mais qu'un four à micro-ondes, un grille pain, et une bouilloire sont en libre-service.
-            </p>
-
+    		  <div class="col-lg-4">
+    		    <p><span class="icon icon-horloge" style="font-size:20px; color:#3498db;"></span> 8h30 à 17h30 du lundi au vendredi</p>
     		  </div>
+    		  <div class="col-lg-4">
+    		    <p><span class="icon icon-telephone" style="font-size:20px; color:#3498db;"></span> 514-343-6111, poste 1614</p>
+    		  </div>
+    		  <br>
     		  
-  		  </div>
-  		    
     		  <div class="container">
-    		  
-    		  <div class="col-lg-8 callout">
-    		    <p>
-              La Planck fonctionne grâce à l'implication assidue d'une cinquantaine de bénévoles. Sans eux, il n'y aurait personne pour vous servir! Au début de chaque session, les membres du Conseil Exécutif de La Planck sont à la recherche de bénévoles pour la sesssion à venir: Inscrivez-vous et contribuez à la vie de votre association! Pour vous remercier de votre implication, à la fin de chaque session, La Planck invite, à ses frais, ses bénévoles à un souper pour les remercier de leur implication.
-      		  </p>
-    			</div>
-    			
-    		  <div class="col-lg-4 callout">
-    		    <img class="img-responsive" src="img/portfolio/planck2.jpg" alt="">
+    		    
+      		  <div class="col-lg-4 callout">
+      		    <img class="img img-responsive" src="img/portfolio/planck1.jpg" alt="">
+      		  </div>
+      		  
+      		  <div class="col-lg-8 ">
+      		    <p>
+      		      La Planck est le café étudiant du département de physique. Il est situé au local D-400 du pavillon Roger-Gaudry. Il offre une ambiance agréable pour discuter ou faire ses devoirs. De plus, sandwich, pâtisseries, café et bien plus sont servis pour satisfaire votre appétit.
+      		    </p>
+      		    <p>
+                Les heures d'ouverture de La Planck sont de 8h30 à 17h30. Il est aussi possible d'être à La Planck à toute heure entre 6h et 23h: Contactez un membre du Conseil d'Administration pour savoir comment entrer si la porte est fermée. Notez que le service alimentaire n'est offert que pendant les heures d'ouvertures officielles; mais qu'un four à micro-ondes, un grille pain, et une bouilloire sont en libre-service.
+              </p>
+  
+      		  </div>
+      		  
     		  </div>
-  			  
-  		  </div>
+    		    
+      		  <div class="container">
+      		  
+      		  <div class="col-lg-8 callout">
+      		    <p>
+                La Planck fonctionne grâce à l'implication assidue d'une cinquantaine de bénévoles. Sans eux, il n'y aurait personne pour vous servir! Au début de chaque session, les membres du Conseil Exécutif de La Planck sont à la recherche de bénévoles pour la sesssion à venir: Inscrivez-vous et contribuez à la vie de votre association! Pour vous remercier de votre implication, à la fin de chaque session, La Planck invite, à ses frais, ses bénévoles à un souper pour les remercier de leur implication.
+        		  </p>
+      			</div>
+      			
+      		  <div class="col-lg-4 callout">
+      		    <img class="img img-responsive" src="img/portfolio/planck2.jpg" alt="">
+      		  </div>
+    			  
+    		  </div>
+    		</div>
   		</div>
 		</div>
 		
 		<!-- ==== SECTION DIVIDER3 -->
 		<section class="section-divider textdivider divider1">
 			<div class="container">
-				<h1>division</h1>
+				<h1>UNE VIE ÉTUDIANTE DYNAMIQUE</h1>
 				<hr>
-				<p>division</p>
+				<p>Peu importe vos intérêts, la PHYSUM a une place pour vous</p>
 			</div><!-- container -->
 		</section><!-- section -->
 		
 				<!-- ==== PORTFOLIO ==== -->
 		<div class="dark_bg">
-  		<div class="container" id="comites" name="comites">
-  		<br>
-  			<div class="row">
-  				<br>
-  				<h1 class="centered">DÉCOUVRE NOS COMITÉS</h1>
-  				<hr>
-  				<br>
-  				<br>
-  			</div><!-- /row -->
-  			
+  		<div class="container" id="comites" name="comites" ng-controller="Comites as comites">
+    		<br>
+    		<br>
+    		<h1 class="centered">DÉCOUVREZ NOS COMITÉS</h1>
+    		<hr>
+    		<br>
+    		<br>
+    		
+    		<div class="container">
+          <div class="row">	
+      			<div class="col-md-6" ng-repeat="comite in comites.com">
+      		    	<div class="grid mask">
+        					<figure>
+        						<img class="img-responsive" src="img/portfolio/dummy.jpg" alt="">
+        						<figcaption>
+        							<p>
+        							  {{comite.description}}
+        							</p>
+        						</figcaption><!-- /figcaption -->
+        					</figure><!-- /figure -->
+        					<div class="caption">
+      							<h5>{{comite.nom}}</h5>
+      							<a href="{{comite.lien}}" target="_blank" class="btn btn-primary btn-lg">Voir le site</a>
+      						</div><!-- /caption -->
+      		    	</div><!-- /grid-mask -->
+      			</div><!-- /col -->
+      		</div>
+    		</div>
+    		<br>
+    		<br>
+
   		</div>
   	</div>
+  	
+		<div id="footerwrap">
+			<div class="container">
+				<h4>Pour toute question ou commentaire concernant le site internet, contactez la webmestre par <a href="mailto:aude.forcione.lambert@gmail.com">courriel</a>.</h4>
+			</div>
+		</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
