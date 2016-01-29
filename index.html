@@ -60,6 +60,7 @@
         			<li><a href="#ca" class="smoothScroll">CA</a></li>
         			<li><a href="#planck" class="smoothScroll">Planck</a></li>
         			<li><a href="#comites" class="smoothScroll">Comités</a></li>
+        			<li><a href="#calendrier" class="smoothScroll">Calendrier</a></li>
         		</ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -142,7 +143,7 @@
         					  <a href="{{membre.facebook}}" class="icon icon-facebook" style="font-size:25px;"></a>
         					</div>
         					<div ng-if="membre.courriel!=''">
-        					  <a href="{{membre.courriel}}" class="icon icon-mail" style="font-size:25px;"></a>
+        					  <a href="mailto:{{membre.courriel}}" target="_blank" class="icon icon-mail" style="font-size:25px;"></a>
         					</div>
         					<br>
         					<div ng-if="membre.nom_adj!=''">
@@ -152,7 +153,7 @@
           					  <a href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook" style="font-size:25px;"></a>
           					</div>
           					<div ng-if="membre.courriel_adj!=''">
-          					  <a href="{{membre.courriel_adj}}" target="_blank" class="icon icon-mail" style="font-size:25px;"></a>
+          					  <a href="mailto:{{membre.courriel_adj}}" target="_blank" class="icon icon-mail" style="font-size:25px;"></a>
           					</div>
         					</div>
       					  <br>
@@ -270,9 +271,40 @@
   		</div>
   	</div>
   	
+		<!-- ==== SECTION DIVIDER4 -->
+		<section class="section-divider textdivider divider1">
+			<div class="container">
+				<h1></h1>
+				<hr>
+				<p>Peu importe vos intérêts, la PHYSUM a une place pour vous</p>
+			</div><!-- container -->
+		</section><!-- section -->
+  	
+  	<div class="dark_bg">
+  		<div class="container" id="calendrier" name="calendrier" ng-controller="Comites as comites">
+    		<br>
+    		<br>
+    		<h1 class="centered">CALENDIRER</h1>
+    		<hr>
+    		<br>
+    		<br>
+    		<div class="embed-responsive embed-responsive-16by9 centered">
+    		  <div class="hidden-sm">
+    		    <iframe src="https://calendar.google.com/calendar/embed?src=mgcfr8t8o4rd8vluhki4dghi84%40group.calendar.google.com&showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    		  </div>
+    		  <div class="visible-sm">
+    		    <iframe src="https://calendar.google.com/calendar/embed?src=mgcfr8t8o4rd8vluhki4dghi84%40group.calendar.google.com&showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FToronto" style="border-width:0" width="300" height="500" frameborder="0" scrolling="no"></iframe>
+    		  </div>
+    		</div>
+    		<br>
+    	</div>
+    </div>
+  	
 		<div id="footerwrap">
 			<div class="container">
-				<h4>Pour toute question ou commentaire concernant le site internet, contactez la webmestre par <a href="mailto:aude.forcione.lambert@gmail.com">courriel</a>.</h4>
+			  <h4>Contactez nous sur notre page facebook <a href="https://www.facebook.com/groups/physum/" class="icon icon-facebook"></a></h4>
+			  <h4>ou par courriel <a href="mailto:physum.ce@gmail.com" target="_blank" class="icon icon-mail"></a></h4>
+				<h4>Pour toute question ou commentaire concernant le site internet, contactez la webmestre <a href="mailto:aude.forcione.lambert@gmail.com" target="_blank" class="icon icon-mail"></a></h4>
 			</div>
 		</div>
 

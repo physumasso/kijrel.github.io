@@ -492,7 +492,7 @@ a:after {
    Image Mask
    ========================================================================== */
 
-.grid figure {
+.  figure {
 	margin: 0;
 	position: relative;
 }
