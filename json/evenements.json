@@ -1,0 +1,26 @@
+[
+  {
+    "nom":"test",
+    "description":"test2",
+      "images":[
+      {"src":"dummy.jpg",
+      "titre":"image 1",
+      "soustitre":"sous-titre 1"},
+      {"src":"dummy.jpg",
+      "titre":"image 2",
+      "soustitre":"sous-titre 2"}
+    ]
+  },
+  {
+    "nom":"test",
+    "description":"test2",
+      "images":[
+      {"src":"dummy.jpg",
+      "titre":"image 1",
+      "soustitre":"sous-titre 1"},
+      {"src":"dummy.jpg",
+      "titre":"image 2",
+      "soustitre":"sous-titre 2"}
+    ]
+  }
+]
