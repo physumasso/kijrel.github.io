@@ -1,46 +1,31 @@
 (function() {
-  var app = angular.module('physum',[]);
+  var app = angular.module('physum', ['ngAnimate']);
   
   app.controller('MembresCa', ['$http', function($http){
     var equipe = this;
     equipe.membres = [];
+    equipe.tab=[];
     $http.get('/kijrel.github.io/json/membres-exec.json').success(function(data){
-      equipe.membres=data;
+      equipe.membres = data;
+      for(i=0;i<equipe.membres.length;i++){
+        equipe.tab[i] = false;
+      }
     });
     
-    equipe.tab = -1;
+    oldValue = -1;
     
     equipe.setTab = function(newValue){
-      if (this.tab == newValue){
-        this.tab = -1;
+      equipe.tab[oldValue] = false;
+      if (oldValue != newValue){
+        equipe.tab[newValue] = true;
+        oldValue = newValue;
       }
       else{
-        this.tab = newValue;
+        oldValue = -1;
       }
-    };
-
-    equipe.isSet = function(tabName){
-      return this.tab === tabName;
     };
     
   }]);
-  
-  app.controller('TabController', function(){
-    this.tab = -1;
-    
-    this.setTab = function(newValue){
-      if (this.tab == newValue){
-        this.tab = -1;
-      }
-      else{
-        this.tab = newValue;
-      }
-    };
-
-    this.isSet = function(tabName){
-      return this.tab === tabName;
-    };
-  });
   
   app.controller('Comites', ['$http', function($http){
     var scope = this;

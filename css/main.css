@@ -2,52 +2,144 @@
   Thème général
 ============================*/
 
-.dark_bg{
-	background-color: rgba(0,0,0,0.8);
+body {
+  position: relative;
+  background: url("../img/header_bg.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  font-family: 'Arvo', serif;
 }
 
-.dark_bg h1, .dark_bg p{
-  color: #fff;
+.fade {
+  opacity: 1;
+  height: 100%;
 }
 
-.light_bg{
-	background-color: rgba(240,240,240,1);
+.fade.ng-hide-add, .fade.ng-hide-remove {
+  transition: all linear 0.5s;
 }
 
-.light_bg_2{
-	background-color: rgba(240,240,240,0.8);
+.fade.ng-hide {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  border: none;
 }
 
-.light_bg h1, .light_bg p, .light_bg_2 h1, .light_bg_2 p, .light_bg div p{
-  color: #333;
+/*=============================
+  Thème pour l'entête
+============================*/
+
+.page-header {
+  margin: 0px;
+  height: 500px;
+  border-style: none;
+  font-size: xx-large;
+  padding: 2%;
+    
+  background: #3498db; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Fx 3.6-15*/
+  background: linear-gradient(to right,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Standard*/
+}
+
+.page-header h1 {
+  font-size: 500%;
+}
+
+.page-header h2 {
+  font-size: 200%;
+}
+
+.page-header p {
+  font-size: 75%;
 }
 
 /*=============================
   Thème pour navigateur
 ============================*/
 
-body {
-    position: relative; 
-}
-
 .affix {
-    top:0;
-    width: 100%;
-    z-index: 9999 !important;
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
 }
 
 .navbar {
-    margin-bottom: 0px;
+  margin: 0px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .affix ~ .container-fluid {
-   position: relative;
-   top: 50px;
+ position: relative;
+ top: 50px;
+}
+
+.navbar button {
+  color: #999;
+}
+
+/*=============================
+  Thème pour l'à propos
+============================*/
+
+#a_propos {
+  background: #ddd;
+  padding: 2%;
+}
+
+#a_propos hr {
+  border-color: #bbb;
 }
 
 /*=============================
   Thème pour section CA
 ============================*/
+
+#ca {
+  background: rgba(0,0,0,0.5);
+  padding: 2%;
+}
+
+#ca h1 {
+  color: #ddd;
+}
+
+#ca hr {
+  border-color: #bbb;
+}
+
+#ca .panel {
+  background: rgba(0,0,0,0);
+}
+
+#ca .panel-heading {
+  border-left: solid #fff 2px;
+  border-right: solid #fff 2px;
+  border-top: solid #fff 2px;
+  background: #ddd;
+}
+
+#ca .panel-body {
+  border-left: solid #fff 2px;
+  border-right: solid #fff 2px;
+  border-bottom: solid #fff 2px;
+  background: #ddd;
+}
+
+#ca .panel-footer {
+  border-top: none;
+  border-left: solid #fff 2px;
+  border-right: solid #fff 2px;
+  border-bottom: solid #fff 2px;
+  background: #ddd;
+}
+
+#ca .panel-body .btn {
+  width: 100%;
+}
 
 .ca-img{
   position: relative;
@@ -79,7 +171,7 @@ body {
 }
 
 .ca-img img{
-  box-shadow: 0px 0px 20px #000;
+  box-shadow: 0px 0px 20px #3498db;
 }
 
 .ca-img-elu-mod{

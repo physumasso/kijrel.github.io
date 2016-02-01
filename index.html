@@ -11,32 +11,33 @@
     <title>PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal</title>
 
     <!-- fichiers css -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="icomoon/style.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type='text/css' href="css/animate.css">-->
+    <link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type='text/css' href="icomoon/style.css">
+    <link rel="stylesheet" type='text/css' href="css/main.css">
 
     <!-- fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic'>
 	  
 	  <!-- fichiers pour angular -->
-	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular-animate.js"></script>
 	  <script type="text/javascript" src="js/app-angular.js"></script>
 	  
 
     
   </head>
 
-  <body data-spy="scroll" datatarget=".navbar" ng-app="physum">
+  <body data-spy="scroll" data-offset="50" datatarget=".navbar" ng-app="physum">
 
 
 
   	<!-- entête -->
     <div id="accueil" class="page-header">
       <div class="container-fluid text-center">
-        <h1><span class="icon icon-physum" style="font-size:150px;"></span></h1>
-	 		  <h1>PHYSUM</h1>
-	 		  <p>Bienvenue sur la page de l'association des étudiants et étudiates en physique de l'Université de Montréal</p>
+        <h1><span class="icon icon-physum"></span></h1>
+	 		  <h2>PHYSUM</h2>
+	 		  <p>Bienvenue sur la page de l'association des étudiants et étudiantes en physique de l'Université de Montréal</p>
       </div><!-- container-fluid -->
     </div><!-- page-header -->
 
@@ -121,29 +122,27 @@
     					</div><!-- panel-heading -->
     					
     					<div class="panel-body">
-      					<div class="ca-img" ng-if="membre.nom_adj!=''">
+      					<!--<div class="ca-img" ng-if="membre.nom_adj!=''">
       				    <img class="img img-circle img-thumbnail ca-img-elu" src="img/team/{{membre.image}}" alt="">
         				  <img class="img img-circle img-thumbnail ca-img-adj" src="img/team/{{membre.image_adj}}" alt="">
       				  </div><!-- ca-img -->
-      				  <div class="ca-img" ng-if="membre.nom_adj==''">
-      				    <img class="img img-circle img-thumbnail ca-img-unique" src="img/team/{{membre.image}}" alt="">
+      				  <!--<div class="ca-img" ng-if="membre.nom_adj==''">
+      				    <img class="img img-circle img-thumbnail ca-img-unique center-block" src="img/team/{{membre.image}}" alt="">
       				  </div><!-- ca-img -->
+      				  <a ng-class="{active: membresca.tab[$index]}" class="btn btn-default" ng-click="membresca.setTab($index)">Description</a></li>
     				  </div><!-- panel-body -->
     				  
-    				  <div class="panel-footer">
-                <a ng-class="{active: membresca.isSet($index)}" class="btn btn-default" ng-click="membresca.setTab($index)">Description</a></li>
-                <div ng-show="membresca.isSet($index)">
-                  <h3>{{membre.nom}}</h3>
-        					<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook" style="font-size:25px;"></a>
-        					<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="icon icon-mail" style="font-size:25px;"></a>
-        					<div ng-if="membre.nom_adj!=''">
-        					  <h4>adjoint(e)</h4>
-          					<h3>{{membre.nom_adj}}</h3>
-          					<a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook" style="font-size:25px;"></a>
-          					<a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="icon icon-mail" style="font-size:25px;"></a>
-        					</div><!-- if adjoint -->
-      					  <p>{{membre.description}}</p>
-                </div><!-- show if actif -->
+              <div class="panel-footer fade" ng-show="membresca.tab[$index]">
+                <h3>{{membre.nom}}</h3>
+      					<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>
+      					<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+      					<div ng-if="membre.nom_adj!=''">
+      					  <h4>adjoint(e)</h4>
+        					<h3>{{membre.nom_adj}}</h3>
+        					<a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook"></a>
+        					<a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+      					</div><!-- if adjoint -->
+    					  <p>{{membre.description}}</p>
               </div><!-- panel-footer -->
               
             </div><!-- panel -->
@@ -162,15 +161,15 @@
   		<div class="row text-center">
   		  
     		<div class="col-sm-4">
-        	<p><span class="icon icon-position" style="font-size:20px; color:#3498db;"></span> D-400 Roger-Gaudry</p>
+        	<p><span class="glyphicon glyphicon-map-marker"></span> D-400 Roger-Gaudry</p>
     		</div><!-- col-sm-4 -->
     		
     		<div class="col-sm-4">
-    		  <p><span class="icon icon-horloge" style="font-size:20px; color:#3498db;"></span> 8h30 à 17h30 du lundi au vendredi</p>
+    		  <p><span class="glyphicon glyphicon-time"></span> 8h30 à 17h30 du lundi au vendredi</p>
     		</div><!-- col-sm-4 -->
     		
     		<div class="col-sm-4">
-    		  <p><span class="icon icon-telephone" style="font-size:20px; color:#3498db;"></span> 514-343-6111, poste 1614</p>
+    		  <p><span class="glyphicon glyphicon-earphone"></span> 514-343-6111, poste 1614</p>
     		</div><!-- col-sm-4 -->
     		
     	</div><!-- row -->
@@ -314,8 +313,8 @@
   	
 		<footer class="container-fluid">
 		  <p>Contactez nous sur notre page facebook <a href="https://www.facebook.com/groups/physum/" class="icon icon-facebook"></a></p>
-		  <p>ou par courriel <a href="mailto:physum.ce@gmail.com" target="_blank" class="icon icon-mail"></a></p>
-			<p>Pour toute question ou commentaire concernant le site internet, contactez la webmestre <a href="mailto:aude.forcione.lambert@gmail.com" target="_blank" class="icon icon-mail"></a></p>
+		  <p>ou par courriel <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
+			<p>Pour toute question ou commentaire concernant le site internet, contactez la webmestre <a href="mailto:aude.forcione.lambert@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
 		</footer>
 		
 		
@@ -340,7 +339,7 @@
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-          scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top -50
         }, 900, function(){
       
           // Add hash (#) to URL when done scrolling (default click behavior)
