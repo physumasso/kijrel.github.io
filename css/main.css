@@ -37,12 +37,11 @@ body {
   border-style: none;
   font-size: xx-large;
   padding: 2%;
-    
-  background: #3498db; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(right,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Fx 3.6-15*/
-  background: linear-gradient(to right,rgba(52,152,219,0.5),rgba(52,152,219,0.9),rgba(52,152,219,0.5)); /*Standard*/
+  background: #a6ff4d; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Fx 3.6-15*/
+  background: linear-gradient(to right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Standard*/
 }
 
 .page-header h1 {
@@ -111,30 +110,33 @@ body {
   border-color: #bbb;
 }
 
+#ca .glyphicon, #ca .icon {
+  color: black;
+}
+
 #ca .panel {
   background: rgba(0,0,0,0);
+  border: none;
 }
 
 #ca .panel-heading {
-  border-left: solid #fff 2px;
-  border-right: solid #fff 2px;
-  border-top: solid #fff 2px;
-  background: #ddd;
+  border-radius: 0;
+  border: solid #a6ff4d 2px;
+  background: #a6ff4d;
 }
 
 #ca .panel-body {
-  border-left: solid #fff 2px;
-  border-right: solid #fff 2px;
-  border-bottom: solid #fff 2px;
+  border-radius: 0;
+  border: solid #a6ff4d 2px;
+  border-top: none;
   background: #ddd;
 }
 
 #ca .panel-footer {
+  border-radius: 0;
+  border: solid #a6ff4d 2px;
   border-top: none;
-  border-left: solid #fff 2px;
-  border-right: solid #fff 2px;
-  border-bottom: solid #fff 2px;
-  background: #ddd;
+  background: #a6ff4d;
 }
 
 #ca .panel-body .btn {
@@ -171,7 +173,7 @@ body {
 }
 
 .ca-img img{
-  box-shadow: 0px 0px 20px #3498db;
+  box-shadow: 0px 0px 20px #64cc00;
 }
 
 .ca-img-elu-mod{
@@ -190,4 +192,121 @@ body {
   margin: auto;
   width: 50%;
   height: 50%;
+}
+
+/*=============================
+  Thème pour section planck
+============================*/
+
+#planck {
+  background: #ddd;
+  padding: 2%;
+}
+
+#planck .row{
+  padding: 10px;
+}
+
+#planck .glyphicon {
+  color: #64cc00;
+}
+
+/*=============================
+  Thème pour événements
+============================*/
+
+#evenements {
+  background: rgba(0,0,0,0.5);
+  padding: 2%;
+}
+
+#evenements h1 {
+  color: #ddd;
+}
+
+#evenements hr {
+  border-color: #bbb;
+}
+
+#evenements .thumbnail {
+  background: #ddd;
+  border: none;
+  padding: 0;
+  padding-top: 2%;
+}
+
+#evenements .thumbnail h2, #evenements .thumbnail p {
+  margin: 5px;
+}
+
+#evenements .carousel {
+  width: 100%;
+}
+
+#evenements .carousel-indicators li {
+  background-color: #a6ff4d;
+}
+
+#evenements .carousel-control span {
+  color: #a6ff4d;
+}
+
+/*=============================
+  Thème pour comités
+============================*/
+
+#comites {
+  background: #ddd;
+  padding: 2%;
+}
+
+#comites .thumbnail {
+  background: rgba(0,0,0,0);
+}
+
+#comites .icon, #comites .glyphicon {
+  color: #64cc00;
+}
+
+#comites .btn {
+  background-color: #a6ff4d;
+}
+
+/*=============================
+  Thème pour calendrier
+============================*/
+
+#calendrier {
+  background: rgba(0,0,0,0.5);
+  padding: 2%;
+}
+
+#calendrier h1 {
+  color: #ddd;
+}
+
+#calendrier hr {
+  border-color: #bbb;
+}
+
+#calendrier .embed-responsive {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*=============================
+  Thème pour footer
+============================*/
+
+footer {
+  background: #111;
+  padding: 2%;
+}
+
+footer p {
+  color: #ddd;
+}
+
+footer .icon, footer .glyphicon {
+  color: #64cc00;
 }

@@ -58,8 +58,8 @@
             <li><a href="#a_propos">À propos</a></li>
         		<li><a href="#ca">CA</a></li>
         		<li><a href="#planck">Planck</a></li>
-        		<li><a href="#comites">Comités</a></li>
         		<li><a href="#evenements">Événements</a></li>
+        		<li><a href="#comites">Comités</a></li>
         		<li><a href="#calendrier">Calendrier</a></li>
           </ul>
         </div>
@@ -70,7 +70,7 @@
     
     <!-- à propos -->
     <div id="a_propos" class="container-fluid">
-			<h1 class="centered">QUI SOMMES NOUS?</h1>
+			<h1>QUI SOMMES NOUS?</h1>
 			<hr>
 			<div class="row">
 			  
@@ -105,7 +105,7 @@
     
     <!-- membres du ca -->
     <div id="ca" class="container-fluid" ng-controller="MembresCa as membresca">
-			<h1 class="centered">LES MEMBRES DU C.A. SONT LÀ POUR VOUS</h1>
+			<h1>LES MEMBRES DU C.A. SONT LÀ POUR VOUS</h1>
 			<hr>
       <div class="row">
         <div ng-repeat="membre in membresca.membres">
@@ -122,13 +122,14 @@
     					</div><!-- panel-heading -->
     					
     					<div class="panel-body">
-      					<!--<div class="ca-img" ng-if="membre.nom_adj!=''">
+      					<div class="ca-img" ng-if="membre.nom_adj!=''">
       				    <img class="img img-circle img-thumbnail ca-img-elu" src="img/team/{{membre.image}}" alt="">
         				  <img class="img img-circle img-thumbnail ca-img-adj" src="img/team/{{membre.image_adj}}" alt="">
       				  </div><!-- ca-img -->
-      				  <!--<div class="ca-img" ng-if="membre.nom_adj==''">
+      				  <div class="ca-img" ng-if="membre.nom_adj==''">
       				    <img class="img img-circle img-thumbnail ca-img-unique center-block" src="img/team/{{membre.image}}" alt="">
       				  </div><!-- ca-img -->
+      				  <br>
       				  <a ng-class="{active: membresca.tab[$index]}" class="btn btn-default" ng-click="membresca.setTab($index)">Description</a></li>
     				  </div><!-- panel-body -->
     				  
@@ -156,7 +157,7 @@
 		
 		<!-- planck -->
 		<div id="planck" class="container-fluid">
-  		<h1 class="centered">LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
+  		<h1>LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
   		<hr>
   		<div class="row text-center">
   		  
@@ -210,36 +211,10 @@
 		</section><!-- section -->
 		
 		
-		
-		<!-- comités -->
-		<div id="comites" class="container-fluid text-center" ng-controller="Comites as comites">
-  		<h1 class="centered">DÉCOUVREZ NOS COMITÉS</h1>
-  		<hr>
-      <div class="row">
-        <div ng-repeat="comite in comites.com">
-          
-          <div class="clearfix visible-sm" ng-if="$index%2==0"></div>
-          <div class="clearfix visible-md" ng-if="$index%3==0"></div>
-          <div class="clearfix visible-lg" ng-if="$index%4==0"></div>
-          
-    			<div class="col-sm-6 col-md-4 col-lg-3">
-    			  <div class="thumbnail">
-    			    <h2><span class="{{comite.glyph}}"></span></h2>
-    					<h3>{{comite.nom}}</h3>
-    					<p>{{comite.description}}</p>
-    					<p><a ng-if="comite.lien!=''" href="{{comite.lien}}" target="_blank" class="btn btn-default">Voir le site</a></p>
-  					</div>
-    			</div><!-- col-md-3 -->
-    			
-  			</div><!-- ng-repeat -->
-  		</div><!-- row -->
-  	</div><!-- container-fluid -->
-  	
-  	
   	
   	<!-- événements -->
-		<div id="evenements" class="container-fluid text-center " ng-controller="Evenements as evenements">
-  		<h1 class="centered">DE NOMBREUX ÉVÉNEMENTS ANNUELS DÉLIRANTS</h1>
+		<div id="evenements" class="container-fluid" ng-controller="Evenements as evenements">
+  		<h1>DE NOMBREUX ÉVÉNEMENTS ANNUELS DÉLIRANTS</h1>
   		<hr>
       <div class="row">
         <div ng-repeat="evenement in evenements.eve">
@@ -288,6 +263,32 @@
   	</div><!-- container-fluid -->
   	
 
+		
+		<!-- comités -->
+		<div id="comites" class="container-fluid" ng-controller="Comites as comites">
+  		<h1>DÉCOUVREZ NOS COMITÉS</h1>
+  		<hr>
+      <div class="row text-center">
+        <div ng-repeat="comite in comites.com">
+          
+          <div class="clearfix visible-sm" ng-if="$index%2==0"></div>
+          <div class="clearfix visible-md" ng-if="$index%3==0"></div>
+          <div class="clearfix visible-lg" ng-if="$index%4==0"></div>
+          
+    			<div class="col-sm-6 col-md-4 col-lg-3">
+    			  <div class="thumbnail">
+    			    <h2><span class="{{comite.glyph}}"></span></h2>
+    					<h3>{{comite.nom}}</h3>
+    					<p>{{comite.description}}</p>
+    					<p><a ng-if="comite.lien!=''" href="{{comite.lien}}" target="_blank" class="btn btn-default">Voir le site</a></p>
+  					</div>
+    			</div><!-- col-md-3 -->
+    			
+  			</div><!-- ng-repeat -->
+  		</div><!-- row -->
+  	</div><!-- container-fluid -->
+  	
+  	
   	
 		<!-- ==== SECTION DIVIDER4 
 		<section class="section-divider textdivider divider1">
@@ -339,7 +340,7 @@
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
-          scrollTop: $(hash).offset().top -50
+          scrollTop: $(hash).offset().top -45
         }, 900, function(){
       
           // Add hash (#) to URL when done scrolling (default click behavior)
