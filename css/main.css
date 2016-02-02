@@ -4,10 +4,13 @@
 
 body {
   position: relative;
-  background: url("../img/header_bg.jpg") no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
+  background: #fff url("../img/header_bg.jpg") no-repeat fixed center;
+  background-size: cover;
   font-family: 'Arvo', serif;
+}
+
+p {
+  font-size: 16px;
 }
 
 .fade {
@@ -116,27 +119,23 @@ body {
 
 #ca .panel {
   background: rgba(0,0,0,0);
-  border: none;
+  border: solid #a6ff4d 3px;
+  border-radius: 0;
 }
 
 #ca .panel-heading {
   border-radius: 0;
-  border: solid #a6ff4d 2px;
   background: #a6ff4d;
 }
 
 #ca .panel-body {
-  border-radius: 0;
-  border: solid #a6ff4d 2px;
-  border-top: none;
   background: #ddd;
 }
 
 #ca .panel-footer {
+  border-top: solid #bbb 3px;
+  background: #ddd;
   border-radius: 0;
-  border: solid #a6ff4d 2px;
-  border-top: none;
-  background: #a6ff4d;
 }
 
 #ca .panel-body .btn {
@@ -233,6 +232,7 @@ body {
   border: none;
   padding: 0;
   padding-top: 2%;
+  border-radius: 0;
 }
 
 #evenements .thumbnail h2, #evenements .thumbnail p {
@@ -240,6 +240,14 @@ body {
 }
 
 #evenements .carousel {
+  width: 100%;
+}
+
+#evenement .carousel-inner {
+  width: 100%;
+}
+
+#evenement .carousel-inner im {
   width: 100%;
 }
 
@@ -303,10 +311,65 @@ footer {
   padding: 2%;
 }
 
+footer h1 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
 footer p {
   color: #ddd;
+  font-size: 14px;
+  margin: 2px;
 }
 
 footer .icon, footer .glyphicon {
   color: #64cc00;
+}
+
+/*=============================
+  Thème pour divisions
+============================*/
+
+.diviseur {
+  height: 300px;
+  border-radius: 0;
+  margin: 0;
+  padding: 5%;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.diviseur h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.diviseur p {
+  font-size: 20px;
+  color: white;
+}
+
+#div1 {
+  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background-size: cover;
+}
+
+#div2 {
+  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background-size: cover;
+}
+
+#div3 {
+  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background-size: cover;
+}
+
+#div4 {
+  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background-size: cover;
+}
+
+#div5 {
+  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background-size: cover;
 }

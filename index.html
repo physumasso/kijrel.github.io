@@ -92,14 +92,11 @@
 		
 		
 		
-		<!-- ==== SECTION DIVIDER1 
-		<section class="section-divider textdivider divider1">
-			<div class="container">
-				<h1>VENEZ RENCONTRER NOTRE ÉQUIPE</h1>
-				<hr>
-				<p>Le conseil d'administration s'occupe du bien être des élèves. N'hésitez pas à nous contacter si vous avez besoin d'aide ou si vous avez des questions.</p>
-			</div><!-- container 
-		</section><!-- section -->
+		<div id="div1" class="container-fluid diviseur text-center">
+      <h1>VENEZ RENCONTRER NOTRE ÉQUIPE</h1>
+      <hr>
+      <p>Le conseil d'administration s'occupe du bien être des élèves. N'hésitez pas à nous contacter si vous avez besoin d'aide ou si vous avez des questions.</p>
+    </div><!-- container-fluid -->
     
     
     
@@ -130,10 +127,10 @@
       				    <img class="img img-circle img-thumbnail ca-img-unique center-block" src="img/team/{{membre.image}}" alt="">
       				  </div><!-- ca-img -->
       				  <br>
-      				  <a ng-class="{active: membresca.tab[$index]}" class="btn btn-default" ng-click="membresca.setTab($index)">Description</a></li>
+      				  <a href="#caFooter{{$index}}" data-toggle="collapse" class="btn btn-default">Description</a></li>
     				  </div><!-- panel-body -->
     				  
-              <div class="panel-footer fade" ng-show="membresca.tab[$index]">
+              <div id="caFooter{{$index}}" class="panel-footer collapse">
                 <h3>{{membre.nom}}</h3>
       					<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>
       					<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
@@ -155,6 +152,14 @@
 		
 		
 		
+		<div id="div2" class="container-fluid diviseur text-center">
+      <h1>NOUS POSSÉDONS L'UN DES MEILLEURS CAFÉS ÉTUDIANTS DU CAMPUS</h1>
+      <hr>
+      <p>Que ce soit pour faire vos devoirs, prendre un bon repas ou simplement relaxer avec des amis, le café étudiant La Planck est votre destination privilégiée.</p>
+    </div><!-- container-fluid -->
+    
+    
+    
 		<!-- planck -->
 		<div id="planck" class="container-fluid">
   		<h1>LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
@@ -201,20 +206,17 @@
 		
 		
 		
-		<!-- ==== SECTION DIVIDER3 
-		<section class="section-divider textdivider divider1">
-			<div class="container">
-				<h1>UNE VIE ÉTUDIANTE DYNAMIQUE</h1>
-				<hr>
-				<p>Peu importe vos intérêts, la PHYSUM a une place pour vous</p>
-			</div><!-- container 
-		</section><!-- section -->
+		<div id="div3" class="container-fluid diviseur text-center">
+      <h1>DE NOMBREUSES ACTIVITÉS POUR TOUT LES GOÛTS</h1>
+      <hr>
+      <p>Entre les cours et les examens, on trouve tout de même le temps de s'amuser en physique! Des activités sportives aux partys hebdomadaires, ils nous fera toujours plaisir de vous y voir.</p>
+    </div><!-- container-fluid -->
 		
 		
   	
   	<!-- événements -->
 		<div id="evenements" class="container-fluid" ng-controller="Evenements as evenements">
-  		<h1>DE NOMBREUX ÉVÉNEMENTS ANNUELS DÉLIRANTS</h1>
+  		<h1>DES ÉVÉNEMENTS À CHAQUE SEMAINE</h1>
   		<hr>
       <div class="row">
         <div ng-repeat="evenement in evenements.eve">
@@ -264,6 +266,14 @@
   	
 
 		
+		<div id="div4" class="container-fluid diviseur text-center">
+      <h1>UNE VIE ÉTUDIANTE DYNAMIQUE</h1>
+      <hr>
+      <p>Peu importe vos intérêts, que vous vouliez vous impliquer à fond ou seulement quelques heures par mois, la PHYSUM a une place pour vous.</p>
+    </div><!-- container-fluid -->
+    
+    
+    
 		<!-- comités -->
 		<div id="comites" class="container-fluid" ng-controller="Comites as comites">
   		<h1>DÉCOUVREZ NOS COMITÉS</h1>
@@ -290,32 +300,45 @@
   	
   	
   	
-		<!-- ==== SECTION DIVIDER4 
-		<section class="section-divider textdivider divider1">
-			<div class="container">
-				<h1></h1>
-				<hr>
-				<p>Peu importe vos intérêts, la PHYSUM a une place pour vous</p>
-			</div><!-- container 
-		</section><!-- section -->
+		<div id="div5" class="container-fluid diviseur text-center">
+      <h1>NOUS AVONS HÂTE DE VOUS RENCONTRER</h1>
+      <hr>
+      <p>Il nous fait toujours plaisir d'accueillir de nouvelles recrues dans nos rangs. Nous espérons vous voir bientôt en physique!</p>
+    </div><!-- container-fluid -->
   	
   	
   	
   	<!-- calendrier -->
   	<div id="calendrier" class="container-fluid" ng-controller="Comites as comites">
-    	<h1 class="centered">CALENDIRER</h1>
+    	<h1 class="centered">CALENDRIER</h1>
     	<hr>
-  		<div class="embed-responsive embed-responsive-16by9 centered">
+  		<div class="embed-responsive embed-responsive-16by9 centered visible-sm visible-md visible-lg">
   		  <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=mgcfr8t8o4rd8vluhki4dghi84%40group.calendar.google.com&showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  		</div><!-- embed-responsive -->
+  		<div class="embed-responsive embed-responsive-16by9 centered visible-xs">
+  		  <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=mgcfr8t8o4rd8vluhki4dghi84%40group.calendar.google.com&showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FToronto" style="border-width:0" width="300" height="500" frameborder="0" scrolling="no"></iframe>
   		</div><!-- embed-responsive -->
     </div><!-- container-fluid -->
   	
 
   	
 		<footer class="container-fluid">
-		  <p>Contactez nous sur notre page facebook <a href="https://www.facebook.com/groups/physum/" class="icon icon-facebook"></a></p>
-		  <p>ou par courriel <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
-			<p>Pour toute question ou commentaire concernant le site internet, contactez la webmestre <a href="mailto:aude.forcione.lambert@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
+		  <h1>Liens utiles</h1>
+		  <div class="row">
+		    <div class="col-md-6">
+		      <p>Contactez nous sur notre page facebook: <a href="https://www.facebook.com/groups/physum/" class="icon icon-facebook"></a></p>
+		      <p>ou par courriel: <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
+		      <p>Nous avons aussi une page youtube: <a href="https://www.youtube.com/user/Physum2012" target="_blanck" class="icon icon-youtube"></a></p>
+		      <p>La page du département de physique vous en apprendra plus sur le programme: <a href="http://phys.umontreal.ca/accueil/" target="_blanck" class="glyphicon glyphicon-link"></a></p>
+		    </div><!-- col-md-6 -->
+		    <div class="col-md-6">
+		      <p>Nous faison partie de la FAECUM, aller voir leur site ici: <a href="http://www.faecum.qc.ca/" target="_blanck" class="icon icon-faecum"></a></p>
+		      <p>Retrouver une panoplie de documents à la bibliothèque de physique: <a href="http://www.bib.umontreal.ca/py/" target="_blanck" class="glyphicon glyphicon-book"></a></p>
+		      <p>ainsi que les examens des années antérieures: <a href="http://www.bib.umontreal.ca/py/examens/cours/default.htm" target="_blanck" class="glyphicon glyphicon-duplicate"></a></p>
+		    </div><!-- col-md-6 -->
+		  </div><!-- row -->
+		  <hr>
+		  <p>Pour toute question ou commentaire concernant le site internet, contactez la webmestre: <a href="mailto:aude.forcione.lambert@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
 		</footer>
 		
 		
