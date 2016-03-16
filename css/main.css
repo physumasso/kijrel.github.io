@@ -1,4 +1,4 @@
-/*=============================
+/*============================
   Thème général
 ============================*/
 
@@ -7,10 +7,19 @@ body {
   background: #fff url("../img/header_bg.jpg") no-repeat fixed center;
   background-size: cover;
   font-family: 'Arvo', serif;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 850px) {
+    body{font-size: 12px;}
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 .fade {
@@ -30,7 +39,12 @@ p {
   border: none;
 }
 
-/*=============================
+.row {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+/*============================
   Thème pour l'entête
 ============================*/
 
@@ -38,7 +52,6 @@ p {
   margin: 0px;
   height: 500px;
   border-style: none;
-  font-size: xx-large;
   padding: 2%;
   background: #a6ff4d; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Safari 5.1-6*/
@@ -48,18 +61,18 @@ p {
 }
 
 .page-header h1 {
-  font-size: 500%;
+  font-size: 15em;
 }
 
 .page-header h2 {
-  font-size: 200%;
+  font-size: 6em;
 }
 
 .page-header p {
-  font-size: 75%;
+  font-size: 2em;
 }
 
-/*=============================
+/*============================
   Thème pour navigateur
 ============================*/
 
@@ -83,7 +96,15 @@ p {
   color: #999;
 }
 
-/*=============================
+.navbar li {
+  font-size: 1.1em;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+/*============================
   Thème pour l'à propos
 ============================*/
 
@@ -96,7 +117,7 @@ p {
   border-color: #bbb;
 }
 
-/*=============================
+/*============================
   Thème pour section CA
 ============================*/
 
@@ -193,7 +214,7 @@ p {
   height: 50%;
 }
 
-/*=============================
+/*============================
   Thème pour section planck
 ============================*/
 
@@ -210,7 +231,7 @@ p {
   color: #64cc00;
 }
 
-/*=============================
+/*============================
   Thème pour événements
 ============================*/
 
@@ -259,7 +280,7 @@ p {
   color: #a6ff4d;
 }
 
-/*=============================
+/*============================
   Thème pour comités
 ============================*/
 
@@ -280,7 +301,7 @@ p {
   background-color: #a6ff4d;
 }
 
-/*=============================
+/*============================
   Thème pour calendrier
 ============================*/
 
@@ -302,7 +323,7 @@ p {
   margin-right: 10%;
 }
 
-/*=============================
+/*============================
   Thème pour footer
 ============================*/
 
@@ -313,12 +334,12 @@ footer {
 
 footer h1 {
   margin-top: 0;
-  font-size: 16px;
+  font-size: 2em;
 }
 
 footer p {
   color: #ddd;
-  font-size: 14px;
+  font-size: 1em;
   margin: 2px;
 }
 
@@ -326,12 +347,12 @@ footer .icon, footer .glyphicon {
   color: #64cc00;
 }
 
-/*=============================
+/*============================
   Thème pour divisions
 ============================*/
 
 .diviseur {
-  height: 300px;
+  height: 350px;
   border-radius: 0;
   margin: 0;
   padding: 5%;
@@ -340,12 +361,12 @@ footer .icon, footer .glyphicon {
 }
 
 .diviseur h1 {
-  font-size: 30px;
+  font-size: 2.5em;
   color: white;
 }
 
 .diviseur p {
-  font-size: 20px;
+  font-size: 2em;
   color: white;
 }
 
