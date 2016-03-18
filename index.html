@@ -138,11 +138,13 @@
 								<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>
 								<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
 								<div ng-if="membre.nom_adj!=''">
+									<br>
 									<h4>adjoint(e)</h4>
 									<h3>{{membre.nom_adj}}</h3>
 									<a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook"></a>
 									<a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
 								</div><!-- if adjoint -->
+								<br>
 								<p>{{membre.description}}</p>
 							</div><!-- panel-footer -->
 

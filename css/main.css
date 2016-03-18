@@ -5,6 +5,9 @@
 body {
   position: relative;
   background: #fff url("../img/header_bg.jpg") no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   font-family: 'Arvo', serif;
   font-size: 14px;
@@ -395,7 +398,7 @@ footer .icon, footer .glyphicon {
 }
 
 #div2 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider2.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
@@ -405,11 +408,11 @@ footer .icon, footer .glyphicon {
 }
 
 #div4 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider4.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
 #div5 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider5.jpg") no-repeat scroll center;
   background-size: cover;
 }
