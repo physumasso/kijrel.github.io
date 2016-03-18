@@ -46,7 +46,7 @@
 
 
 		<!-- navigateur -->
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#monNav">
@@ -231,8 +231,10 @@
 						<div class="col-md-4">
 							<div class="thumbnail">
 
-								<h2>{{evenement.nom}}</h2>
-								<p>{{evenement.description}}</p>
+								<div class="header">
+									<h2>{{evenement.nom}}</h2>
+									<p>{{evenement.description}}</p>
+								</div><!-- header -->
 
 								<div id="carou{{$index}}" class="carousel slide" data-ride="carousel">
 									<!-- Indicators -->
@@ -261,6 +263,8 @@
 										<span class="sr-only">Suivant</span>
 									</a>
 								</div><!-- carousel -->
+
+								<br>
 
 							</div><!-- thumbnail -->
 						</div><!-- col-md-6 -->
@@ -340,7 +344,7 @@
 					<p>La page du département de physique vous en apprendra plus sur le programme: <a href="http://phys.umontreal.ca/accueil/" target="_blanck" class="glyphicon glyphicon-link"></a></p>
 				</div><!-- col-md-6 -->
 				<div class="col-md-6">
-					<p>Nous faison partie de la FAECUM, aller voir leur site ici: <a href="http://www.faecum.qc.ca/" target="_blanck" class="icon icon-faecum"></a></p>
+					<p>Nous faisons partie de la FAECUM, aller voir leur site ici: <a href="http://www.faecum.qc.ca/" target="_blanck" class="icon icon-faecum"></a></p>
 					<p>Retrouver une panoplie de documents à la bibliothèque de physique: <a href="http://www.bib.umontreal.ca/py/" target="_blanck" class="glyphicon glyphicon-book"></a></p>
 					<p>ainsi que les examens des années antérieures: <a href="http://www.bib.umontreal.ca/py/examens/cours/default.htm" target="_blanck" class="glyphicon glyphicon-duplicate"></a></p>
 				</div><!-- col-md-6 -->

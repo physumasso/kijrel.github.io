@@ -50,26 +50,26 @@ h1 {
 
 .page-header {
   margin: 0px;
-  height: 500px;
+  height: 700px;
   border-style: none;
   padding: 2%;
   background: #a6ff4d; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Safari 5.1-6*/
   background: -o-linear-gradient(right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Opera 11.1-12*/
   background: -moz-linear-gradient(right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Fx 3.6-15*/
-  background: linear-gradient(to right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Standard*/
+  background: linear-gradient(to right,rgba(6,249,6,0.5),rgba(6,249,6,0.8),rgba(6,249,6,0.5)); /*Standard*/
 }
 
 .page-header h1 {
-  font-size: 15em;
+  font-size: 17em;
 }
 
 .page-header h2 {
-  font-size: 6em;
+  font-size: 9em;
 }
 
 .page-header p {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /*============================
@@ -140,13 +140,14 @@ h1 {
 
 #ca .panel {
   background: rgba(0,0,0,0);
-  border: solid #a6ff4d 3px;
+  border: solid #00cc00 2px;
+  box-shadow: 0 0 0 2px #0df20d;
   border-radius: 0;
 }
 
 #ca .panel-heading {
   border-radius: 0;
-  background: #a6ff4d;
+  background: #00cc00;
 }
 
 #ca .panel-body {
@@ -193,7 +194,7 @@ h1 {
 }
 
 .ca-img img{
-  box-shadow: 0px 0px 20px #64cc00;
+  box-shadow: 0px 0px 20px #06f906;
 }
 
 .ca-img-elu-mod{
@@ -228,7 +229,8 @@ h1 {
 }
 
 #planck .glyphicon {
-  color: #64cc00;
+  color: #0df20d;
+  text-shadow: 0 0 5px #136c13;
 }
 
 /*============================
@@ -256,12 +258,17 @@ h1 {
   border-radius: 0;
 }
 
+#evenements .thumbnail .header {
+  height: 12em;
+}
+
 #evenements .thumbnail h2, #evenements .thumbnail p {
-  margin: 5px;
+  margin: 10px;
 }
 
 #evenements .carousel {
-  width: 100%;
+  width: 94%;
+  margin: auto;
 }
 
 #evenement .carousel-inner {
@@ -273,11 +280,13 @@ h1 {
 }
 
 #evenements .carousel-indicators li {
-  background-color: #a6ff4d;
+  background-color: #0df20d;
+  border: none;
+  box-shadow: 0 0 2px #136c13;
 }
 
 #evenements .carousel-control span {
-  color: #a6ff4d;
+  color: #0df20d;
 }
 
 /*============================
@@ -294,11 +303,14 @@ h1 {
 }
 
 #comites .icon, #comites .glyphicon {
-  color: #64cc00;
+  color: #0df20d;
+  font-size: 2em;
+  text-shadow: 0 0 10px #136c13;
 }
 
 #comites .btn {
-  background-color: #a6ff4d;
+  background-color: #06f906;
+  border: 1px solid #136c13;
 }
 
 /*============================
@@ -344,7 +356,7 @@ footer p {
 }
 
 footer .icon, footer .glyphicon {
-  color: #64cc00;
+  color: #0df20d;
 }
 
 /*============================
@@ -363,11 +375,13 @@ footer .icon, footer .glyphicon {
 .diviseur h1 {
   font-size: 2.5em;
   color: white;
+  text-shadow: 0 0 3px #000;
 }
 
 .diviseur p {
   font-size: 2em;
   color: white;
+  text-shadow: 0 0 3px #000;
 }
 
 #div1 {
@@ -381,7 +395,7 @@ footer .icon, footer .glyphicon {
 }
 
 #div3 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider3.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
