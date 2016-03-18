@@ -11,7 +11,7 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-    body{font-size: 12px;}
+    body{font-size: 11px;}
 }
 
 p {
@@ -41,7 +41,6 @@ h1 {
 
 .row {
   padding-right: 0px;
-  margin-right: 0px;
 }
 
 /*============================
@@ -70,6 +69,12 @@ h1 {
 
 .page-header p {
   font-size: 3em;
+}
+
+@media screen and (max-width: 850px) {
+    .page-header h1{font-size: 22em;}
+    .page-header h2{font-size: 6em;}
+    .page-header p{font-size: 2.5em;}
 }
 
 /*============================
