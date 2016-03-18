@@ -16,10 +16,11 @@ html, body {
 @media screen and (max-width: 850px) {
   html, body{
     font-size: 10px;
-    -webkit-background-size: auto 100px;
-    -moz-background-size: auto 100px;
-    -o-background-size: auto 100px;
-    background-size: auto 100px;
+    background-position: center top;
+    -webkit-background-size: auto 600px;
+    -moz-background-size: auto 600px;
+    -o-background-size: auto 600px;
+    background-size: auto 600px;
   }
 }
 
