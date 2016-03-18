@@ -14,7 +14,13 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-    body{font-size: 11px;}
+  body{
+    font-size: 11px;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+  }
 }
 
 p {
