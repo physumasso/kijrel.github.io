@@ -16,6 +16,10 @@ html, body {
 @media screen and (max-width: 850px) {
   html, body{
     font-size: 10px;
+    -webkit-background-size: auto 100px;
+    -moz-background-size: auto 100px;
+    -o-background-size: auto 100px;
+    background-size: auto 100px;
   }
 }
 
@@ -57,10 +61,10 @@ h1 {
   height: 700px;
   border-style: none;
   padding: 2%;
-  background: #a6ff4d; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(right,rgba(166,255,77,0.5),rgba(166,255,77,0.9),rgba(166,255,77,0.5)); /*Fx 3.6-15*/
+  background: #00cc00; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(6,249,6,0.5),rgba(6,249,6,0.8),rgba(6,249,6,0.5)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(6,249,6,0.5),rgba(6,249,6,0.8),rgba(6,249,6,0.5)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(6,249,6,0.5),rgba(6,249,6,0.8),rgba(6,249,6,0.5)); /*Fx 3.6-15*/
   background: linear-gradient(to right,rgba(6,249,6,0.5),rgba(6,249,6,0.8),rgba(6,249,6,0.5)); /*Standard*/
 }
 
