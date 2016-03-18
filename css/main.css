@@ -4,41 +4,34 @@
 
 html, body {
   position: relative;
-  background: #fff url("../img/header_bg.jpg") no-repeat center center fixed;
+/*  background: #fff url("../img/header_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  font-family: 'Arvo', serif;
+  font-size: 14px;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../img/header_bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Arvo', serif;
-  font-size: 14px;
-  z-index: -2;
-}
-
-#bg {
-  display: none;
-  z-index: -1;
 }
 
 @media screen and (max-width: 850px) {
   html, body{
     font-size: 10px;
-    background: none;
-  }
-  #bg {
-    display: block;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%;
-  }
-  #bg img {
-    position: absolute; 
-    top: 0; 
-    left: -50%; 
-    right: -50%; 
-    bottom: 0; 
-    width: 350%;
   }
 }
 
