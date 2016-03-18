@@ -2,7 +2,7 @@
   Thème général
 ============================*/
 
-body {
+body, html {
   position: relative;
   background: #fff url("../img/header_bg.jpg") no-repeat fixed center;
   -webkit-background-size: cover;
@@ -11,6 +11,7 @@ body {
   background-size: cover;
   font-family: 'Arvo', serif;
   font-size: 14px;
+  min-height: 100%
 }
 
 @media screen and (max-width: 850px) {
