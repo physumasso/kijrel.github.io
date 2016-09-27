@@ -9,13 +9,12 @@
 		<meta name="description" content="PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal">
 		<meta name="author" content="Aude Forcione-Lambert - kijrel@gmail.com">
 
-		<link rel="icon" href="img/logo_physum/logo3_cou.svg">
+		<link rel="icon" href="">
 
 		<title>PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal</title>
 
 		<!-- fichiers css -->
-		<!--<link rel="stylesheet" type='text/css' href="css/animate.css">-->
-		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type='text/css' href="icomoon/style.css">
 		<link rel="stylesheet" type='text/css' href="css/main.css">
 
@@ -30,7 +29,7 @@
 
 
 
-	<body data-spy="scroll" data-offset="50" datatarget=".navbar" ng-app="physum">
+	<body data-spy="scroll" data-offset="50" data-target=".navbar" ng-app="physum">
 
 
 
@@ -46,7 +45,7 @@
 
 
 		<!-- navigateur -->
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="700">
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#monNav">
@@ -121,31 +120,35 @@
 							<div class="panel panel-default">
 
 								<div class="panel-heading">
-									<h2>{{membre.titre}}</h2>
-								</div><!-- panel-heading -->
-
-								<div class="panel-body">
-									<div class="ca-img" ng-if="membre.nom_adj!=''">
+								  <div class="ca-img" ng-if="membre.nom_adj!=''">
 										<img class="img img-circle img-thumbnail ca-img-elu" src="img/team/{{membre.image}}" alt="">
 										<img class="img img-circle img-thumbnail ca-img-adj" src="img/team/{{membre.image_adj}}" alt="">
 									</div><!-- ca-img -->
 									<div class="ca-img" ng-if="membre.nom_adj==''">
 										<img class="img img-circle img-thumbnail ca-img-unique center-block" src="img/team/{{membre.image}}" alt="">
 									</div><!-- ca-img -->
+								</div><!-- panel-heading -->
+
+								<div class="panel-body">
+									<h2>{{membre.titre}}</h2>
 									<br>
-									<a href="#caFooter{{$index}}" data-toggle="collapse" class="btn btn-default">Description</a></li>
+									<a href="#caFooter{{$index}}" data-toggle="collapse" class="btn btn-default">Informations</a></li>
 								</div><!-- panel-body -->
 
 								<div id="caFooter{{$index}}" class="panel-footer collapse">
 									<h3>{{membre.nom}}</h3>
-									<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>
-									<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+									<h6>
+  									<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>  
+  									<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+									</h6>
 									<div ng-if="membre.nom_adj!=''">
 										<br>
-										<h4>adjoint(e)</h4>
-										<h3>{{membre.nom_adj}}</h3>
-										<a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook"></a>
-										<a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+										<h5>adjoint(e)</h5>
+										<h4>{{membre.nom_adj}}</h4>
+										<h6>
+  										<a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook"></a>  
+  										<a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+									  </h6>
 									</div><!-- if adjoint -->
 									<br>
 									<p>{{membre.description}}</p>
@@ -371,9 +374,9 @@
 
 		<!-- Scripts à la fin pour accélérer le chargement -->
 		<!-- librairie jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- librairie bootstrap -->
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- smooth scroll -->
 		<script>
 			$(document).ready(function(){
