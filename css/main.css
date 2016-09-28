@@ -4,9 +4,20 @@
 
 body {
   position: relative;
-  background: #fff url("../img/header_bg.jpg") no-repeat fixed center;
-  background-size: cover;
   font-family: 'Arvo', serif;
+}
+
+@media (max-width: 767px) {
+  body {
+    backgroud: #000 url("../img/header_bg_mobile.jpg") repeat relative center;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #000 url("../img/header_bg.jpg") no-repeat fixed center;
+    background-size: cover;
+  }
 }
 
 p {
