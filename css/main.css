@@ -379,11 +379,13 @@ footer .icon, footer .glyphicon {
 .diviseur h1 {
   font-size: 30px;
   color: white;
+  text-shadow: 0 0 3px black;
 }
 
 .diviseur p {
   font-size: 20px;
   color: white;
+  text-shadow: 0 0 2px black;
 }
 
 #div1 {
@@ -392,21 +394,21 @@ footer .icon, footer .glyphicon {
 }
 
 #div2 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider2.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
 #div3 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider3.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
 #div4 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider4.jpg") no-repeat scroll center;
   background-size: cover;
 }
 
 #div5 {
-  background: #fff url("../img/bg/divider1.jpg") no-repeat scroll center;
+  background: #fff url("../img/bg/divider5.jpg") no-repeat scroll center;
   background-size: cover;
 }
