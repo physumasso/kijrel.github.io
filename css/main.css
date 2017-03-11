@@ -7,14 +7,14 @@ body {
   font-family: 'Arvo', serif;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   body {
     background-image: url("../img/header_bg_mobile.jpg");
     background-size: 100%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   body {
     background: #000 url("../img/header_bg.jpg") no-repeat fixed center;
     background-size: cover;
@@ -349,17 +349,19 @@ footer {
 }
 
 footer h1 {
+  color: #aaa;
   margin-top: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 footer p {
   color: #ddd;
-  font-size: 14px;
+  font-size: 15px;
   margin: 2px;
 }
 
 footer .icon, footer .glyphicon {
+  font-size: 18px;
   color: #00ff00;
 }
 
@@ -383,9 +385,20 @@ footer .icon, footer .glyphicon {
 }
 
 .diviseur p {
-  font-size: 20px;
   color: white;
   text-shadow: 0 0 2px black;
+}
+
+@media (max-width: 767px) {
+  .diviseur p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .diviseur p {
+    font-size: 20px;
+  }
 }
 
 #div1 {

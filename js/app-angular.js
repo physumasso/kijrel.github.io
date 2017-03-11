@@ -5,7 +5,7 @@
     var equipe = this;
     equipe.membres = [];
     equipe.tab=[];
-    $http.get('/kijrel.github.io/json/membres-exec.json').success(function(data){
+    $http.get('./json/membres-exec.html').success(function(data){
       equipe.membres = data;
       for(i=0;i<equipe.membres.length;i++){
         equipe.tab[i] = false;
@@ -30,7 +30,7 @@
   app.controller('Comites', ['$http', function($http){
     var scope = this;
     scope.com = [];
-    $http.get('/kijrel.github.io/json/comites.json').success(function(data){
+    $http.get('./json/comites.html').success(function(data){
       scope.com=data;
     });
   }]);
@@ -38,7 +38,7 @@
   app.controller('Evenements', ['$http', function($http){
     var scope = this;
     scope.eve = [];
-    $http.get('/kijrel.github.io/json/evenements.json').success(function(data){
+    $http.get('./json/evenements.html').success(function(data){
       scope.eve=data;
     });
   }]);
