@@ -243,7 +243,11 @@ h6 {
   padding: 10px;
 }
 
-#planck .glyphicon {
+#planck a {
+  color: #333;
+}
+
+#planck .glyphicon, #planck .icon {
   color: #00ff00;
 }
 
