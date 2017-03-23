@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?uhwkke');
-  src:  url('fonts/icomoon.eot?uhwkke#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?uhwkke') format('truetype'),
-    url('fonts/icomoon.woff?uhwkke') format('woff'),
-    url('fonts/icomoon.svg?uhwkke#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ncslql');
+  src:  url('fonts/icomoon.eot?ncslql#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ncslql') format('truetype'),
+    url('fonts/icomoon.woff?ncslql') format('woff'),
+    url('fonts/icomoon.svg?ncslql#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-google-drive:before {
+  content: "\e90a";
+}
+.icon-books:before {
+  content: "\e905";
+}
+.icon-library:before {
+  content: "\e906";
+}
+.icon-trophy:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-youtube:before {
+  content: "\e908";
+}
 .icon-acfas:before {
   content: "\e909";
 }
@@ -47,20 +65,5 @@
 }
 .icon-leanpub:before {
   content: "\f212";
-}
-.icon-books:before {
-  content: "\e905";
-}
-.icon-library:before {
-  content: "\e906";
-}
-.icon-trophy:before {
-  content: "\e907";
-}
-.icon-facebook:before {
-  content: "\e900";
-}
-.icon-youtube:before {
-  content: "\e908";
 }
 
