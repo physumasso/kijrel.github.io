@@ -63,6 +63,7 @@
 						<li><a href="#comites">Comités</a></li>
 						<li><a href="#calendrier">Calendrier</a></li>
 						<li><a href="#liens">Liens</a></li>
+						<li><a href="https://drive.google.com/drive/folders/0B7jQu73oYlfzbURveTR5TDN5N28?usp=sharing" target="_blanck">Documents</a></li>
 					</ul>
 				</div>
 			</div>
@@ -394,6 +395,8 @@
 			$(document).ready(function(){
 				// Add smooth scrolling to all links in navbar + footer link
 				$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+				  
+				  if(!$( this ).attr( 'href' ).match(/^#/)) return;
 
 					// Prevent default anchor click behavior
 					event.preventDefault();
