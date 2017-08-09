@@ -1,0 +1,107 @@
+/*Normal*/
+dt{
+  margin-top: 1ex;
+  font-weight: bold;
+  position:relative;
+}
+
+dt:first-child{
+  margin-top:0px;
+}
+
+dd{
+  margin-left: 20px;
+  position:relative;
+}
+
+
+dl.dotlist>dt:not(.alone):after{
+  content: ".\00A0"
+}
+
+dl.ddotlist>dt:not(.alone):after{
+  content: ":\00A0"
+}
+
+dl.dashlist>dt:not(.alone):after{
+  content: "\00A0-\00A0"
+}
+
+dl.odt>dt:before, dl.udt>dt:before, dl.odd>dd:before, dl.udd>dd:before{
+  display: inline-block;
+  width: 40px;
+  text-align: right;
+  position: absolute;
+  left: -40px;
+}
+
+dl.odt{
+  counter-reset: dt;
+}
+
+dl.odd>dt{
+  counter-reset: dd;
+}
+
+dl.odt>dt, dl.udt>dt, dl.odd>dd, dl.udd>dd{
+  margin-left: 40px;
+}
+
+dl.odt>dd, dl.udt>dd{
+  margin-left: 60px;
+}
+
+dl.odt.odd>dd, dl.udt.odd>dd, dl.odt.udd>dd, dl.udt.udd>dd{
+  margin-left: 80px;
+}
+
+
+dl.odt>dt:before{
+  counter-increment: dt;
+  content: "\00A0\00A0" counter(dt) ".\00A0\00A0";
+}
+
+dl.odd>dd:before{ 
+  counter-increment: dd;
+  content: "\00A0\00A0" counter(dd) ".\00A0\00A0";
+}
+
+dl.udt>dt:before, dl.udd>dd:before{
+  font-weight: normal;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+  content: "\00A0\00A0\2022\00A0\00A0";
+}
+
+dl.udt.udd>dd:before{
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+  content: "\00A0\00A0\25CB\00A0\00A0";
+}
+
+
+dl.oneline>dt{
+  margin-top: 0ex;
+  float: left;
+  clear: both;
+  z-index:10;
+}
+
+dl.oneline>dt+dd:before{
+  display:none;
+}
+
+dd>dl{
+  margin-left:-20px;
+}
+
+dl>dt.alone{
+  font-weight: normal;
+}
+
+dl.oneline>dt.alone{
+  float: none;
+}
