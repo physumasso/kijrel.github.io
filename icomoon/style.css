@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ncslql');
-  src:  url('fonts/icomoon.eot?ncslql#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ncslql') format('truetype'),
-    url('fonts/icomoon.woff?ncslql') format('woff'),
-    url('fonts/icomoon.svg?ncslql#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?rog2iw');
+  src:  url('fonts/icomoon.eot?rog2iw#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rog2iw') format('truetype'),
+    url('fonts/icomoon.woff?rog2iw') format('woff'),
+    url('fonts/icomoon.svg?rog2iw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-github:before {
+  content: "\e90b";
+}
+.icon-beer:before {
+  content: "\f0fc";
+}
+.icon-wechat:before {
+  content: "\f1d7";
+}
+.icon-leanpub:before {
+  content: "\f212";
+}
 .icon-google-drive:before {
   content: "\e90a";
 }
@@ -44,6 +56,7 @@
 }
 .icon-acfas:before {
   content: "\e909";
+  color: #ffd750;
 }
 .icon-faecum:before {
   content: "\e903";
@@ -57,13 +70,3 @@
 .icon-soccer:before {
   content: "\e901";
 }
-.icon-beer:before {
-  content: "\f0fc";
-}
-.icon-wechat:before {
-  content: "\f1d7";
-}
-.icon-leanpub:before {
-  content: "\f212";
-}
-
