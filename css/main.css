@@ -230,6 +230,23 @@ h6 {
   height: 50%;
 }
 
+/*=======================
+  Thème pour les actus fb
+========================*/
+
+#actu_fb hr {
+  border-color: #bbb;
+}
+
+#actu_fb {
+  background: #ddd;
+  padding: 2%;
+}
+
+#actu_fb .row{
+  padding: 10px;
+}
+
 /*=============================
   Thème pour section planck
 ============================*/

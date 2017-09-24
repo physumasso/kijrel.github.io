@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal">
-		<meta name="author" content="Aude Forcione-Lambert - kijrel@gmail.com">
+		<meta name="author" content="PHYSUM - physum.ce@gmail.com">
 
 		<link rel="icon" href="img/physum.png">
 
@@ -31,7 +31,17 @@
 
 	<body data-spy="scroll" data-offset="50" data-target=".navbar" ng-app="physum">
 
-
+		<!-- script pour facebook feed -->
+		<!-- voir https://developers.facebook.com/docs/plugins/page-plugin/ -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+  		  var js, fjs = d.getElementsByTagName(s)[0];
+  	      if (d.getElementById(id)) return;
+  		  js = d.createElement(s); js.id = id;
+  		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+        </script>
 
 		<!-- entête -->
 		<div id="accueil" class="page-header container-fluid">
@@ -58,6 +68,7 @@
 						<li class="active"><a href="#accueil">Accueil</a></li>
 						<li><a href="#a_propos">À propos</a></li>
 						<li><a href="#ca">CA</a></li>
+                        <li><a href="#actu_fb">Actualités</a></li>
 						<li><a href="#planck">Planck</a></li>
 						<li><a href="#evenements">Événements</a></li>
 						<li><a href="#comites">Comités</a></li>
@@ -94,8 +105,7 @@
 				</div><!-- row -->
 			</div><!-- container-fluid -->
 		</div><!-- a_propos -->
-
-
+		
 
 		<!-- diviseur -->
 		<div id="div1" class="container-fluid diviseur text-center">
@@ -164,10 +174,41 @@
 			</div><!-- container-fluid -->
 		</div><!-- ca -->
 
+		<!-- facebook feed -->
+		<div id="actu_fb" class="container-fluid">
+			<h1 style="color:#000000">SUIVEZ-NOUS SUR FACEBOOK POUR TOUTES LES ACTUALITÉS</h1>
+			<hr>
+			<div class="container-fluid">
+				<div class="row">
+                    <div class="col-sm-4 text-center">
+					    <div class="fb-page" data-href="https://www.facebook.com/assophysum" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+						    <blockquote cite="https://www.facebook.com/assophysum" class="fb-xfbml-parse-ignore">
+							    <a href="https://www.facebook.com/assophysum">Physum - Association étudiante</a>
+						    </blockquote>
+                        </div><!-- fb-page -->
+                    </div><!-- col-sm-4 -->
+                    
+                    <div class="col-sm-4">
+                        <p>Toutes les actualités: AG, partys, évènements, etc. passent par notre page Facebook. Abonnez-vous pour ne rien manquer!</p>
+                        <p>Vous êtes nouvellement inscrit(e) en physique à l'Université de Montréal? Profitez-en pour rejoindre le <a href="https://www.facebook.com/groups/physum/">groupe Facebook</a> des étudiants et étudiantes en physique à l'Université de Montréal. C'est le moyen parfait pour garder contact avec nos consoeurs physiciennes et confrères physiciens!</p>
+                        <p>De plus, chaque cohorte possède son propre groupe Facebook! Trouvez le vôtre afin d'être en contact avec vos collègues! Vous n'arrivez pas à trouver le groupe de votre cohorte? N'hésitez pas à contacter un ou une membre du <a href="#ca">CA</a> pour vous aider.</p>
+                        <p>De même, notre café étudiant préféré possède sa propre page Facebook! Abonnez-vous pour avoir les actualités du <a href="#planck">Café La Planck</a></p>
+                    </div><!-- col-sm-4 -->
 
+                    <div class="col-sm-4 text-center">
+                        <div class="fb-page" data-href="https://www.facebook.com/CafeLaPlanck/" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/CafeLaPlanck/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/CafeLaPlanck/">Café la Planck</a>
+                            </blockquote>
+                        </div><!-- fb-page -->
+				    </div><!-- col-sm-4 -->
+                
+                </div><!-- row -->
+			</div><!-- container-fluid -->
+		</div><!-- facebook feed -->
 
 		<!-- diviseur -->
-		<div id="div2" class="container-fluid diviseur text-center">
+		<div id="div3" class="container-fluid diviseur text-center">
 			<h1>NOUS POSSÉDONS LE MEILLEUR CAFÉ ÉTUDIANT DU CAMPUS</h1>
 			<hr>
 			<p>Que ce soit pour faire vos devoirs, prendre un bon repas ou simplement relaxer avec des ami(e)s, le café étudiant La Planck est votre destination privilégiée.</p>
