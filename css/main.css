@@ -360,6 +360,23 @@ h6 {
   margin-right: 10%;
 }
 
+/*==========================
+  Thème pour les partenaires
+============================*/
+
+#partners hr {
+  border-color: #bbb;
+}
+
+#partners {
+  background: #ddd;
+  padding: 2%;
+}
+
+#partners .row{
+  padding: 10px;
+}
+
 /*=============================
   Thème pour footer
 ============================*/
