@@ -230,6 +230,23 @@ h6 {
   height: 50%;
 }
 
+/*=======================
+  Thème pour les actus fb
+========================*/
+
+#actu_fb hr {
+  border-color: #bbb;
+}
+
+#actu_fb {
+  background: #ddd;
+  padding: 2%;
+}
+
+#actu_fb .row{
+  padding: 10px;
+}
+
 /*=============================
   Thème pour section planck
 ============================*/
@@ -341,6 +358,23 @@ h6 {
 #calendrier .embed-responsive {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+/*==========================
+  Thème pour les partenaires
+============================*/
+
+#partners hr {
+  border-color: #bbb;
+}
+
+#partners {
+  background: #ddd;
+  padding: 2%;
+}
+
+#partners .row{
+  padding: 10px;
 }
 
 /*=============================
