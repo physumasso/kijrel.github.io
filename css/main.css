@@ -239,12 +239,13 @@ h6 {
 }
 
 #actu_fb {
-  background: #ddd;
+  background-color: #ddd;
   padding: 2%;
 }
 
 #actu_fb .row{
   padding: 10px;
+  background-color: #ddd;
 }
 
 /*=============================
