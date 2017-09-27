@@ -3,188 +3,188 @@
 
 
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal">
-		<meta name="author" content="PHYSUM - physum.ce@gmail.com">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PHYSUM - Association des étudiants et étudiates en physique de l'Université de Montréal">
+        <meta name="author" content="PHYSUM - physum.ce@gmail.com">
 
-		<link rel="icon" href="img/physum.png">
+        <link rel="icon" href="img/physum.png">
 
-		<title>PHYSUM - Association des étudiants et étudiantes en physique de l'Université de Montréal</title>
+        <title>PHYSUM - Association des étudiants et étudiantes en physique de l'Université de Montréal</title>
 
-		<!-- fichiers css -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type='text/css' href="icomoon/style.css">
-		<link rel="stylesheet" type='text/css' href="css/main.css">
+        <!-- fichiers css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type='text/css' href="icomoon/style.css">
+        <link rel="stylesheet" type='text/css' href="css/main.css">
 
-		<!-- fonts -->
-		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic'>
-		  
-		<!-- fichiers pour angular -->
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular-animate.js"></script>
-		<script type="text/javascript" src="js/app-angular.js"></script>
-	</head>
+        <!-- fonts -->
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic'>
+          
+        <!-- fichiers pour angular -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular-animate.js"></script>
+        <script type="text/javascript" src="js/app-angular.js"></script>
+    </head>
 
 
 
-	<body data-spy="scroll" data-offset="50" data-target=".navbar" ng-app="physum">
+    <body data-spy="scroll" data-offset="50" data-target=".navbar" ng-app="physum">
 
-		<!-- script pour facebook feed -->
-		<!-- voir https://developers.facebook.com/docs/plugins/page-plugin/ -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-  		  var js, fjs = d.getElementsByTagName(s)[0];
-  	      if (d.getElementById(id)) return;
-  		  js = d.createElement(s); js.id = id;
-  		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
-  		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+        <!-- script pour facebook feed -->
+        <!-- voir https://developers.facebook.com/docs/plugins/page-plugin/ -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
         </script>
 
-		<!-- entête -->
-		<div id="accueil" class="page-header container-fluid">
-			<div class="container-fluid text-center">
-				<h1><span class="icon icon-physum"></span></h1>
-				<h2>PHYSUM</h2>
-				<p>Bienvenue sur la page de l'association des étudiants et étudiantes en physique de l'Université de Montréal</p>
-			</div><!-- container-fluid -->
-		</div><!-- page-header -->
+        <!-- entête -->
+        <div id="accueil" class="page-header container-fluid">
+            <div class="container-fluid text-center">
+                <h1><span class="icon icon-physum"></span></h1>
+                <h2>PHYSUM</h2>
+                <p>Bienvenue sur la page de l'association des étudiants et étudiantes en physique de l'Université de Montréal</p>
+            </div><!-- container-fluid -->
+        </div><!-- page-header -->
 
 
 
-		<!-- navigateur -->
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#monNav">
-						<span class="glyphicon glyphicon-menu-hamburger"></span>                      
-					</button>
-					<a class="navbar-brand" href="#accueil"><span class="icon icon-physum"></span> Physum</a>
-				</div>
-				<div class="collapse navbar-collapse" id="monNav">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#accueil">Accueil</a></li>
-						<li><a href="#a_propos">À propos</a></li>
-						<li><a href="#ca">CA</a></li>
+        <!-- navigateur -->
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#monNav">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>                      
+                    </button>
+                    <a class="navbar-brand" href="#accueil"><span class="icon icon-physum"></span> Physum</a>
+                </div>
+                <div class="collapse navbar-collapse" id="monNav">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a_propos">À propos</a></li>
+                        <li><a href="#ca">CA</a></li>
                         <li><a href="#actu_fb">Actualités</a></li>
-						<li><a href="#planck">Planck</a></li>
-						<li><a href="#evenements">Événements</a></li>
-						<li><a href="#comites">Comités</a></li>
-						<li><a href="#calendrier">Calendrier</a></li>
-						<li><a href="#liens">Liens</a></li>
-						<li><a href="https://drive.google.com/drive/folders/0B7jQu73oYlfzbURveTR5TDN5N28?usp=sharing" target="_blanck">Documents</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>    
+                        <li><a href="#planck">Planck</a></li>
+                        <li><a href="#evenements">Événements</a></li>
+                        <li><a href="#comites">Comités</a></li>
+                        <li><a href="#calendrier">Calendrier</a></li>
+                        <li><a href="#liens">Liens</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/0B7jQu73oYlfzbURveTR5TDN5N28?usp=sharing" target="_blanck">Documents</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
 
 
 
-		<!-- à propos -->
-		<div id="a_propos" class="container-fluid">
-			<h1>QUI SOMMES NOUS?</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row">
-		  
-					<div class="col-lg-6">
-						<p>L'Association des étudiants et étudiantes en physique de l'Université de Montréal (PHYSUM) représente les étudiants et étudiantes en physique de l'Université de Montréal depuis 1986. Toute personne inscrite au baccalauréat, à la majeure, à la mineure, à la maîtrise ou au doctorat en physique, physique-informatique ou mathématiques-physique à l’Université de Montréal, est automatiquement membre de la PHYSUM. De plus, pour ceux et celles qui font une maîtrise individualisée ou un doctorat individualisé et ayant choisi le département de physique comme unité d'accueil peuvent faire une demande écrite au secrétariat de la PHYSUM pour en être membre.</p>
-					</div><!-- col-lg-6 -->
+        <!-- à propos -->
+        <div id="a_propos" class="container-fluid">
+            <h1>QUI SOMMES NOUS?</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+          
+                    <div class="col-lg-6">
+                        <p>L'Association des étudiants et étudiantes en physique de l'Université de Montréal (PHYSUM) représente les étudiants et étudiantes en physique de l'Université de Montréal depuis 1986. Toute personne inscrite au baccalauréat, à la majeure, à la mineure, à la maîtrise ou au doctorat en physique, physique-informatique ou mathématiques-physique à l’Université de Montréal, est automatiquement membre de la PHYSUM. De plus, pour ceux et celles qui font une maîtrise individualisée ou un doctorat individualisé et ayant choisi le département de physique comme unité d'accueil peuvent faire une demande écrite au secrétariat de la PHYSUM pour en être membre.</p>
+                    </div><!-- col-lg-6 -->
 
-					<div class="col-lg-6">
-						<p>La PHYSUM poursuit les buts suivants:</p>
-						<ul>
-							<li><p>représenter les intérêts des membres auprès des corps professoral et administratifs;</p></li>
-							<li><p>promouvoir la formation et le maintien d'un niveau de vie sociale intéressant pour les membres.</p></li>
-						</ul>
-						<p>Étant accréditée, la PHYSUM dispose du droit d'envoyer des représentants et représentantes dans plusieurs comités du Département de Physique. Les membres qui nous représentent sont élu(e)s lors d'une Assemblée Générale. Nous pouvons ainsi contribuer à l'orientation et au fonctionnement du département.</p>
-					</div><!-- col-lg-6 -->
+                    <div class="col-lg-6">
+                        <p>La PHYSUM poursuit les buts suivants:</p>
+                        <ul>
+                            <li><p>représenter les intérêts des membres auprès des corps professoral et administratifs;</p></li>
+                            <li><p>promouvoir la formation et le maintien d'un niveau de vie sociale intéressant pour les membres.</p></li>
+                        </ul>
+                        <p>Étant accréditée, la PHYSUM dispose du droit d'envoyer des représentants et représentantes dans plusieurs comités du Département de Physique. Les membres qui nous représentent sont élu(e)s lors d'une Assemblée Générale. Nous pouvons ainsi contribuer à l'orientation et au fonctionnement du département.</p>
+                    </div><!-- col-lg-6 -->
 
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- a_propos -->
-		
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </div><!-- a_propos -->
+        
 
-		<!-- diviseur -->
-		<div id="div1" class="container-fluid diviseur text-center">
-			<h1>VENEZ RENCONTRER NOTRE ÉQUIPE</h1>
-			<hr>
-			<p>Le conseil d'administration s'occupe du bien-être des membres. N'hésitez pas à nous contacter si vous avez besoin d'aide ou si vous avez des questions.</p>
-		</div><!-- container-fluid -->
+        <!-- diviseur -->
+        <div id="div1" class="container-fluid diviseur text-center">
+            <h1>VENEZ RENCONTRER NOTRE ÉQUIPE</h1>
+            <hr>
+            <p>Le conseil d'administration s'occupe du bien-être des membres. N'hésitez pas à nous contacter si vous avez besoin d'aide ou si vous avez des questions.</p>
+        </div><!-- container-fluid -->
 
 
 
-		<!-- membres du ca -->
-		<div id="ca" class="container-fluid" ng-controller="MembresCa as membresca">
-			<h1>LES MEMBRES DU C.A. SONT LÀ POUR VOUS</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row">
-					<div ng-repeat="membre in membresca.membres">
+        <!-- membres du ca -->
+        <div id="ca" class="container-fluid" ng-controller="MembresCa as membresca">
+            <h1>LES MEMBRES DU C.A. SONT LÀ POUR VOUS</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div ng-repeat="membre in membresca.membres">
 
-						<div class="clearfix visible-sm" ng-if="$index%2==0"></div>
-						<div class="clearfix visible-md" ng-if="$index%3==0"></div>
-						<div class="clearfix visible-lg" ng-if="$index%4==0"></div>
+                        <div class="clearfix visible-sm" ng-if="$index%2==0"></div>
+                        <div class="clearfix visible-md" ng-if="$index%3==0"></div>
+                        <div class="clearfix visible-lg" ng-if="$index%4==0"></div>
 
-						<div class="col-sm-6 col-md-4 col-lg-3">
-							<div class="panel panel-default">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="panel panel-default">
 
-								<div class="panel-heading">
-								  <div class="ca-img" ng-if="membre.nom_adj!=''">
-										<img class="img img-circle img-thumbnail ca-img-elu" ng-src="img/team/{{membre.image}}" alt="">
-										<img class="img img-circle img-thumbnail ca-img-adj" ng-src="img/team/{{membre.image_adj}}" alt="">
-									</div><!-- ca-img -->
-									<div class="ca-img" ng-if="membre.nom_adj==''">
-										<img class="img img-circle img-thumbnail ca-img-unique center-block" ng-src="img/team/{{membre.image}}" alt="">
-									</div><!-- ca-img -->
-								</div><!-- panel-heading -->
+                                <div class="panel-heading">
+                                  <div class="ca-img" ng-if="membre.nom_adj!=''">
+                                        <img class="img img-circle img-thumbnail ca-img-elu" ng-src="img/team/{{membre.image}}" alt="">
+                                        <img class="img img-circle img-thumbnail ca-img-adj" ng-src="img/team/{{membre.image_adj}}" alt="">
+                                    </div><!-- ca-img -->
+                                    <div class="ca-img" ng-if="membre.nom_adj==''">
+                                        <img class="img img-circle img-thumbnail ca-img-unique center-block" ng-src="img/team/{{membre.image}}" alt="">
+                                    </div><!-- ca-img -->
+                                </div><!-- panel-heading -->
 
-								<div class="panel-body">
-									<h2>{{membre.titre}}</h2>
-									<br>
-									<a href="#caFooter{{$index}}" data-toggle="collapse" class="btn btn-default">Informations</a></li>
-								</div><!-- panel-body -->
+                                <div class="panel-body">
+                                    <h2>{{membre.titre}}</h2>
+                                    <br>
+                                    <a href="#caFooter{{$index}}" data-toggle="collapse" class="btn btn-default">Informations</a></li>
+                                </div><!-- panel-body -->
 
-								<div id="caFooter{{$index}}" class="panel-footer collapse">
-									<h3>{{membre.nom}}</h3>
-									<h6>
-  									<a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>  
-  									<a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
-									</h6>
-									<div ng-if="membre.nom_adj!=''">
-										<br>
-										<h5>adjoint(e)</h5>
-										<h4>{{membre.nom_adj}}</h4>
-										<h6>
-  										<a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook"></a>  
-  										<a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
-									  </h6>
-									</div><!-- if adjoint -->
-									<br>
-									<p>{{membre.description}}</p>
-								</div><!-- panel-footer -->
+                                <div id="caFooter{{$index}}" class="panel-footer collapse">
+                                    <h3>{{membre.nom}}</h3>
+                                    <h6>
+                                    <a ng-if="membre.facebook!=''" href="{{membre.facebook}}" class="icon icon-facebook"></a>  
+                                    <a ng-if="membre.courriel!=''" href="mailto:{{membre.courriel}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+                                    </h6>
+                                    <div ng-if="membre.nom_adj!=''">
+                                        <br>
+                                        <h5>adjoint(e)</h5>
+                                        <h4>{{membre.nom_adj}}</h4>
+                                        <h6>
+                                        <a ng-if="membre.facebook_adj!=''" href="{{membre.facebook_adj}}" target="_blank" class="icon icon-facebook"></a>  
+                                        <a ng-if="membre.courriel_adj!=''" href="mailto:{{membre.courriel_adj}}" target="_blank" class="glyphicon glyphicon-envelope"></a>
+                                      </h6>
+                                    </div><!-- if adjoint -->
+                                    <br>
+                                    <p>{{membre.description}}</p>
+                                </div><!-- panel-footer -->
 
-							</div><!-- panel -->
-						</div><!-- col-sm-6 col-md-4 col-lg-3 -->
+                            </div><!-- panel -->
+                        </div><!-- col-sm-6 col-md-4 col-lg-3 -->
 
-					</div><!-- ng-repeat -->
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- ca -->
+                    </div><!-- ng-repeat -->
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </div><!-- ca -->
 
-		<!-- facebook feed -->
-		<div id="actu_fb" class="container-fluid">
-			<h1 style="color:#000000">SUIVEZ-NOUS SUR FACEBOOK POUR TOUTES LES ACTUALITÉS</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row">
+        <!-- facebook feed -->
+        <div id="actu_fb" class="container-fluid">
+            <h1 style="color:#000000">SUIVEZ-NOUS SUR FACEBOOK POUR TOUTES LES ACTUALITÉS</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
                     <div class="col-sm-4 text-center">
-					    <div class="fb-page" data-href="https://www.facebook.com/assophysum" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-						    <blockquote cite="https://www.facebook.com/assophysum" class="fb-xfbml-parse-ignore">
-							    <a href="https://www.facebook.com/assophysum">Physum - Association étudiante</a>
-						    </blockquote>
+                        <div class="fb-page" data-href="https://www.facebook.com/assophysum" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                            <blockquote cite="https://www.facebook.com/assophysum" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/assophysum">Physum - Association étudiante</a>
+                            </blockquote>
                         </div><!-- fb-page -->
                     </div><!-- col-sm-4 -->
                     
@@ -201,216 +201,216 @@
                                 <a href="https://www.facebook.com/CafeLaPlanck/">Café la Planck</a>
                             </blockquote>
                         </div><!-- fb-page -->
-				    </div><!-- col-sm-4 -->
+                    </div><!-- col-sm-4 -->
                 
                 </div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- facebook feed -->
+            </div><!-- container-fluid -->
+        </div><!-- facebook feed -->
 
-		<!-- diviseur -->
-		<div id="div3" class="container-fluid diviseur text-center">
-			<h1>NOUS POSSÉDONS LE MEILLEUR CAFÉ ÉTUDIANT DU CAMPUS</h1>
-			<hr>
-			<p>Que ce soit pour faire vos devoirs, prendre un bon repas ou simplement relaxer avec des ami(e)s, le café étudiant La Planck est votre destination privilégiée.</p>
-		</div><!-- container-fluid -->
-
-
-
-		<!-- planck -->
-		<div id="planck" class="container-fluid">
-			<h1>LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row text-center">
-
-					<div class="col-sm-3">
-						<p><span class="glyphicon glyphicon-map-marker"></span> D-400 Roger-Gaudry</p>
-					</div><!-- col-sm-4 -->
-
-					<div class="col-sm-3">
-						<p><span class="glyphicon glyphicon-time"></span>Du lundi au vendredi: 8h30 à 17h30 (automne, hiver), 8h30 à 13h30 (été)</p>
-					</div><!-- col-sm-4 -->
-
-					<div class="col-sm-3">
-						<p><span class="glyphicon glyphicon-earphone"></span> 514-343-6111, poste 1614</p>
-					</div><!-- col-sm-4 -->
-					
-					<div class="col-sm-3">
-						<p><a href="https://www.facebook.com/CafeLaPlanck" target="_blanck" class="icon icon-facebook"></a><a href="https://www.facebook.com/CafeLaPlanck"> Visitez la page Facebook</a></p>
-					</div><!-- col-sm-4 -->
-
-				</div><!-- row -->
-				<div class="row">
-
-					<div class="col-sm-5">
-						<img class="img img-responsive center-block" src="img/portfolio/planck1.jpg" alt="">
-					</div><!-- col-md-5 -->
-
-					<div class="col-sm-7">
-						<p>La Planck est le café étudiant de physique. Il est situé au local D-400 du pavillon Roger-Gaudry. Il offre une ambiance agréable pour discuter ou faire ses devoirs. De plus, sandwichs, pâtisseries, cafés et bien plus sont servis pour satisfaire votre appétit.</p>
-						<p>Les heures d'ouverture de La Planck sont de 8h30 à 17h30 durant les sessions d'automne et d'hiver et de 8h30 à 13h30 durant la session d'été. Il est aussi possible d'être à La Planck à toute heure entre 6h et 23h : contactez un membre du Conseil d'Administration pour savoir comment entrer si la porte est fermée. Notez que le service alimentaire n'est offert que pendant les heures d'ouverture officielles. Cependant, un four à micro-ondes, un grille-pain, un grille-panini et une bouilloire sont en libre-service en tout temps.</p>
-					</div><!-- col-md-7 -->
-
-				</div><!-- row -->
-				<div class="row">
-
-					<div class="col-sm-5 col-sm-push-7">
-						<img class="img img-responsive center-block" src="img/portfolio/planck2.jpg" alt="">
-					</div><!-- col-md-4 -->
-
-					<div class="col-sm-7 col-sm-pull-5">
-						<p>La Planck fonctionne grâce à l'implication assidue d'une cinquantaine de bénévoles. C'est grâce à eux que l'on puisse offrir les prix les plus bas du campus (café à 25¢)! Au début de chaque session, les membres du Conseil Exécutif de La Planck sont à la recherche de bénévoles pour la session à venir : inscrivez-vous et contribuez à la vie de votre association! Pour les remercier, à la fin de chaque session, La Planck invite, à ses frais, ses bénévoles à un souper pour les remercier de leur implication.</p>
-					</div><!-- col-md-7 -->
-
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- planck -->
+        <!-- diviseur -->
+        <div id="div3" class="container-fluid diviseur text-center">
+            <h1>NOUS POSSÉDONS LE MEILLEUR CAFÉ ÉTUDIANT DU CAMPUS</h1>
+            <hr>
+            <p>Que ce soit pour faire vos devoirs, prendre un bon repas ou simplement relaxer avec des ami(e)s, le café étudiant La Planck est votre destination privilégiée.</p>
+        </div><!-- container-fluid -->
 
 
 
-		<!-- diviseur -->
-		<div id="div3" class="container-fluid diviseur text-center">
-			<h1>DE NOMBREUSES ACTIVITÉS POUR TOUS LES GOÛTS</h1>
-			<hr>
-			<p>Entre les cours et les examens, on trouve tout de même le temps de s'amuser en physique! Des activités sportives aux partys thématiques, il nous fera toujours plaisir de vous y voir!</p>
-		</div><!-- container-fluid -->
+        <!-- planck -->
+        <div id="planck" class="container-fluid">
+            <h1>LA PLANCK, CAFÉ EXTRAORDINAIRE</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row text-center">
+
+                    <div class="col-sm-3">
+                        <p><span class="glyphicon glyphicon-map-marker"></span> D-400 Roger-Gaudry</p>
+                    </div><!-- col-sm-4 -->
+
+                    <div class="col-sm-3">
+                        <p><span class="glyphicon glyphicon-time"></span>Du lundi au vendredi: 8h30 à 17h30 (automne, hiver), 8h30 à 13h30 (été)</p>
+                    </div><!-- col-sm-4 -->
+
+                    <div class="col-sm-3">
+                        <p><span class="glyphicon glyphicon-earphone"></span> 514-343-6111, poste 1614</p>
+                    </div><!-- col-sm-4 -->
+                    
+                    <div class="col-sm-3">
+                        <p><a href="https://www.facebook.com/CafeLaPlanck" target="_blanck" class="icon icon-facebook"></a><a href="https://www.facebook.com/CafeLaPlanck"> Visitez la page Facebook</a></p>
+                    </div><!-- col-sm-4 -->
+
+                </div><!-- row -->
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <img class="img img-responsive center-block" src="img/portfolio/planck1.jpg" alt="">
+                    </div><!-- col-md-5 -->
+
+                    <div class="col-sm-7">
+                        <p>La Planck est le café étudiant de physique. Il est situé au local D-400 du pavillon Roger-Gaudry. Il offre une ambiance agréable pour discuter ou faire ses devoirs. De plus, sandwichs, pâtisseries, cafés et bien plus sont servis pour satisfaire votre appétit.</p>
+                        <p>Les heures d'ouverture de La Planck sont de 8h30 à 17h30 durant les sessions d'automne et d'hiver et de 8h30 à 13h30 durant la session d'été. Il est aussi possible d'être à La Planck à toute heure entre 6h et 23h : contactez un membre du Conseil d'Administration pour savoir comment entrer si la porte est fermée. Notez que le service alimentaire n'est offert que pendant les heures d'ouverture officielles. Cependant, un four à micro-ondes, un grille-pain, un grille-panini et une bouilloire sont en libre-service en tout temps.</p>
+                    </div><!-- col-md-7 -->
+
+                </div><!-- row -->
+                <div class="row">
+
+                    <div class="col-sm-5 col-sm-push-7">
+                        <img class="img img-responsive center-block" src="img/portfolio/planck2.jpg" alt="">
+                    </div><!-- col-md-4 -->
+
+                    <div class="col-sm-7 col-sm-pull-5">
+                        <p>La Planck fonctionne grâce à l'implication assidue d'une cinquantaine de bénévoles. C'est grâce à eux que l'on puisse offrir les prix les plus bas du campus (café à 25¢)! Au début de chaque session, les membres du Conseil Exécutif de La Planck sont à la recherche de bénévoles pour la session à venir : inscrivez-vous et contribuez à la vie de votre association! Pour les remercier, à la fin de chaque session, La Planck invite, à ses frais, ses bénévoles à un souper pour les remercier de leur implication.</p>
+                    </div><!-- col-md-7 -->
+
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </div><!-- planck -->
 
 
 
-		<!-- événements -->
-		<div id="evenements" class="container-fluid" ng-controller="Evenements as evenements">
-			<h1>DES ÉVÉNEMENTS TOUT AU LONG DE L'ANNÉE</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row">
-					<div ng-repeat="evenement in evenements.eve">
-
-						<div class="clearfix" ng-if="$index%3==0"></div>
-
-						<div class="col-md-4">
-							<div class="thumbnail">
-
-								<div class="header">
-									<h2>{{evenement.nom}}</h2>
-									<p>{{evenement.description}}</p>
-								</div><!-- header -->
-
-								<div id="carou{{$index}}" class="carousel slide" data-ride="carousel">
-									<!-- Indicators -->
-									<ol class="carousel-indicators">
-										<li ng-repeat="image in evenement.images" data-target="#carou{{$parent.$index}}" data-slide-to="{{$index}}" ng-class="{active:$first}"></li>
-									</ol>
-
-									<!-- Wrapper for slides -->
-									<div class="carousel-inner" role="listbox">
-										<div ng-repeat="image in evenement.images" class="item" ng-class="{active:$first}">
-											<img class="center-block" ng-src="img/portfolio/{{image.src}}">
-											<div class="carousel-caption">
-												<h3>{{image.titre}}</h3>
-												<p>{{image.soustitre}}</p>
-											</div><!-- carousel-caption -->
-										</div><!-- item -->
-									</div><!-- carousel-inner -->
-
-									<!-- Left and right controls -->
-									<a class="left carousel-control" href="#carou{{$index}}" role="button" data-slide="prev">
-										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-										<span class="sr-only">Précédent</span>
-									</a>
-									<a class="right carousel-control" href="#carou{{$index}}" role="button" data-slide="next">
-										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-										<span class="sr-only">Suivant</span>
-									</a>
-								</div><!-- carousel -->
-
-								<br>
-
-							</div><!-- thumbnail -->
-						</div><!-- col-md-4 -->
-
-					</div><!-- ng-repeat -->
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- evenements -->
+        <!-- diviseur -->
+        <div id="div3" class="container-fluid diviseur text-center">
+            <h1>DE NOMBREUSES ACTIVITÉS POUR TOUS LES GOÛTS</h1>
+            <hr>
+            <p>Entre les cours et les examens, on trouve tout de même le temps de s'amuser en physique! Des activités sportives aux partys thématiques, il nous fera toujours plaisir de vous y voir!</p>
+        </div><!-- container-fluid -->
 
 
 
-		<!-- diviseur -->
-		<div id="div4" class="container-fluid diviseur text-center">
-			<h1>UNE VIE ÉTUDIANTE DYNAMIQUE</h1>
-			<hr>
-			<p>Peu importe vos intérêts, que vous vouliez vous impliquer à fond ou seulement venir faire le party, la PHYSUM a une place pour vous.</p>
-		</div><!-- container-fluid -->
+        <!-- événements -->
+        <div id="evenements" class="container-fluid" ng-controller="Evenements as evenements">
+            <h1>DES ÉVÉNEMENTS TOUT AU LONG DE L'ANNÉE</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div ng-repeat="evenement in evenements.eve">
+
+                        <div class="clearfix" ng-if="$index%3==0"></div>
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+
+                                <div class="header">
+                                    <h2>{{evenement.nom}}</h2>
+                                    <p>{{evenement.description}}</p>
+                                </div><!-- header -->
+
+                                <div id="carou{{$index}}" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li ng-repeat="image in evenement.images" data-target="#carou{{$parent.$index}}" data-slide-to="{{$index}}" ng-class="{active:$first}"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div ng-repeat="image in evenement.images" class="item" ng-class="{active:$first}">
+                                            <img class="center-block" ng-src="img/portfolio/{{image.src}}">
+                                            <div class="carousel-caption">
+                                                <h3>{{image.titre}}</h3>
+                                                <p>{{image.soustitre}}</p>
+                                            </div><!-- carousel-caption -->
+                                        </div><!-- item -->
+                                    </div><!-- carousel-inner -->
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#carou{{$index}}" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Précédent</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carou{{$index}}" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Suivant</span>
+                                    </a>
+                                </div><!-- carousel -->
+
+                                <br>
+
+                            </div><!-- thumbnail -->
+                        </div><!-- col-md-4 -->
+
+                    </div><!-- ng-repeat -->
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </div><!-- evenements -->
 
 
 
-		<!-- comités -->
-		<div id="comites" class="container-fluid" ng-controller="Comites as comites">
-			<h1>DÉCOUVREZ NOS COMITÉS</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row text-center">
-					<div ng-repeat="comite in comites.com">
-
-						<div class="clearfix visible-sm" ng-if="$index%2==0"></div>
-						<div class="clearfix visible-md" ng-if="$index%3==0"></div>
-						<div class="clearfix visible-lg" ng-if="$index%4==0"></div>
-
-						<div class="col-sm-6 col-md-4 col-lg-3">
-							<div class="thumbnail">
-								<h2><span class="{{comite.glyph}}"></span></h2>
-								<h3>{{comite.nom}}</h3>
-								<p>{{comite.description}}</p>
-								<p><a ng-if="comite.lien!=''" href="{{comite.lien}}" target="_blank" class="btn btn-default">Voir le site</a></p>
-							</div>
-						</div><!-- col-sm-6 col-md-4 col-lg-3 -->
-
-					</div><!-- ng-repeat -->
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- comites -->
+        <!-- diviseur -->
+        <div id="div4" class="container-fluid diviseur text-center">
+            <h1>UNE VIE ÉTUDIANTE DYNAMIQUE</h1>
+            <hr>
+            <p>Peu importe vos intérêts, que vous vouliez vous impliquer à fond ou seulement venir faire le party, la PHYSUM a une place pour vous.</p>
+        </div><!-- container-fluid -->
 
 
 
-		<!-- diviseur -->
-		<div id="div5" class="container-fluid diviseur text-center">
-			<h1>NOUS AVONS HÂTE DE VOUS RENCONTRER</h1>
-			<hr>
-			<p>Il nous fait toujours plaisir d'accueillir de nouvelles recrues dans nos rangs. Nous espérons vous voir bientôt en physique!</p>
-		</div><!-- container-fluid -->
+        <!-- comités -->
+        <div id="comites" class="container-fluid" ng-controller="Comites as comites">
+            <h1>DÉCOUVREZ NOS COMITÉS</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div ng-repeat="comite in comites.com">
+
+                        <div class="clearfix visible-sm" ng-if="$index%2==0"></div>
+                        <div class="clearfix visible-md" ng-if="$index%3==0"></div>
+                        <div class="clearfix visible-lg" ng-if="$index%4==0"></div>
+
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="thumbnail">
+                                <h2><span class="{{comite.glyph}}"></span></h2>
+                                <h3>{{comite.nom}}</h3>
+                                <p>{{comite.description}}</p>
+                                <p><a ng-if="comite.lien!=''" href="{{comite.lien}}" target="_blank" class="btn btn-default">Voir le site</a></p>
+                            </div>
+                        </div><!-- col-sm-6 col-md-4 col-lg-3 -->
+
+                    </div><!-- ng-repeat -->
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+        </div><!-- comites -->
 
 
 
-		<!-- calendrier -->
-		<div id="calendrier" class="container-fluid" ng-controller="Comites as comites">
-			<h1 class="centered">CALENDRIER</h1>
-			<hr>
+        <!-- diviseur -->
+        <div id="div5" class="container-fluid diviseur text-center">
+            <h1>NOUS AVONS HÂTE DE VOUS RENCONTRER</h1>
+            <hr>
+            <p>Il nous fait toujours plaisir d'accueillir de nouvelles recrues dans nos rangs. Nous espérons vous voir bientôt en physique!</p>
+        </div><!-- container-fluid -->
+
+
+
+        <!-- calendrier -->
+        <div id="calendrier" class="container-fluid" ng-controller="Comites as comites">
+            <h1 class="centered">CALENDRIER</h1>
+            <hr>
       <!-- Non Mobile Agenda -->
-			<div class="embed-responsive embed-responsive-16by9 centered visible-sm visible-md visible-lg">
-				<iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=physum.ce%40gmail.com&amp;src=uq08nu8o4uom0k3njk5i5nr3mf28fjdh%40import.calendar.google.com&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;color=%2329527A&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            <div class="embed-responsive embed-responsive-16by9 centered visible-sm visible-md visible-lg">
+                <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=physum.ce%40gmail.com&amp;src=uq08nu8o4uom0k3njk5i5nr3mf28fjdh%40import.calendar.google.com&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;color=%2329527A&amp;ctz=America%2FToronto" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
       </div><!-- embed-responsive -->
       <!-- Mobile Agenda: Only change src if needed -->
-			<div class="embed-responsive embed-responsive-16by9 centered visible-xs">
+            <div class="embed-responsive embed-responsive-16by9 centered visible-xs">
         <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?src=physum.ce%40gmail.com&amp;src=uq08nu8o4uom0k3njk5i5nr3mf28fjdh%40import.calendar.google.com&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;color=%2329527A&amp;ctz=America%2FToronto" style="border-width:0" width="350" height="500" frameborder="0" scrolling="no"></iframe>
-			</div><!-- embed-responsive -->
-		</div><!-- container-fluid -->
+            </div><!-- embed-responsive -->
+        </div><!-- container-fluid -->
 
         <!-- partenaires -->
-		<div id="partners" class="container-fluid">
-			<h1 style="color:#000000">MERCI À NOS PARTENAIRES</h1>
-			<hr>
-			<div class="container-fluid">
-				<div class="row">
+        <div id="partners" class="container-fluid">
+            <h1 style="color:#000000">MERCI À NOS PARTENAIRES</h1>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
                     <div class="col-sm-4 text-center">
                         <a href="https://www.facebook.com/CafeLaPlanck/" target="_blanck">
-						    <img class="img img-responsive center-block" src="img/partenaires/planck.jpg" alt="">
+                            <img class="img img-responsive center-block" src="img/partenaires/planck.jpg" alt="">
                         </a>
                         <p>Café étudiant La Planck</p>
                     </div><!-- col-sm-4 -->
 
                     <div class="col-sm-4 text-center">
                         <a href="http://www.acfas.ca/" target="_blanck">
-						    <img class="img img-responsive center-block" src="img/partenaires/acfas.jpg" alt="">
+                            <img class="img img-responsive center-block" src="img/partenaires/acfas.jpg" alt="">
                         </a>
                         <p>Association Francophone pour le Savoir</p>
                     </div><!-- col-sm-4 -->
@@ -419,72 +419,72 @@
                         <p> </p><!-- Dummy text -->
                     </div><!-- col-sm-4 -->
                 </div><!-- row -->
-			</div><!-- container-fluid -->
-		</div><!-- facebook feed -->
+            </div><!-- container-fluid -->
+        </div><!-- facebook feed -->
 
 
-		<!-- footer -->
-		<footer id="liens" class="container-fluid">
-			<h1>Liens utiles</h1>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">
-						<p>Contactez nous sur notre page facebook : <a href="https://www.facebook.com/groups/physum/" class="icon icon-facebook"></a></p>
-						<p>ou par courriel: <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
-						<p>Nous avons aussi une page youtube : <a href="https://www.youtube.com/user/Physum2012" target="_blanck" class="icon icon-youtube"></a></p>
-						<p>La page du département de physique vous en apprendra plus sur le programme : <a href="http://phys.umontreal.ca/accueil/" target="_blanck" class="glyphicon glyphicon-link"></a></p>
+        <!-- footer -->
+        <footer id="liens" class="container-fluid">
+            <h1>Liens utiles</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Contactez nous sur notre page facebook : <a href="https://www.facebook.com/groups/physum/" class="icon icon-facebook"></a></p>
+                        <p>ou par courriel: <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
+                        <p>Nous avons aussi une page youtube : <a href="https://www.youtube.com/user/Physum2012" target="_blanck" class="icon icon-youtube"></a></p>
+                        <p>La page du département de physique vous en apprendra plus sur le programme : <a href="http://phys.umontreal.ca/accueil/" target="_blanck" class="glyphicon glyphicon-link"></a></p>
                         <p>Documents officiels (charte, etc.) : <a href="https://drive.google.com/drive/folders/0B7jQu73oYlfzbURveTR5TDN5N28?usp=sharing" target="_blanck" class="icon icon-google-drive"></a></p>
-					</div><!-- col-md-6 -->
-					<div class="col-md-6">
-						<p>Nous faisons partie de la FAECUM, aller voir leur site ici : <a href="http://www.faecum.qc.ca/" target="_blanck" class="icon icon-faecum"></a></p>
-						<p>Retrouver une panoplie de documents à la bibliothèque de physique : <a href="http://www.bib.umontreal.ca/py/" target="_blanck" class="glyphicon glyphicon-book"></a></p>
-						<p>ainsi que les examens des années antérieures : <a href="http://www.bib.umontreal.ca/py/examens/cours/default.htm" target="_blanck" class="glyphicon glyphicon-duplicate"></a></p>
+                    </div><!-- col-md-6 -->
+                    <div class="col-md-6">
+                        <p>Nous faisons partie de la FAECUM, aller voir leur site ici : <a href="http://www.faecum.qc.ca/" target="_blanck" class="icon icon-faecum"></a></p>
+                        <p>Retrouver une panoplie de documents à la bibliothèque de physique : <a href="http://www.bib.umontreal.ca/py/" target="_blanck" class="glyphicon glyphicon-book"></a></p>
+                        <p>ainsi que les examens des années antérieures : <a href="http://www.bib.umontreal.ca/py/examens/cours/default.htm" target="_blanck" class="glyphicon glyphicon-duplicate"></a></p>
                         <p>La PHYSUM possède un compte GitHub! Allez voir ici : <a href="https://github.com/physumasso" target="_blanck" class="icon icon-github"></a></p>
-					</div><!-- col-md-6 -->
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-			<hr>
-			<p>Pour toute question ou commentaire concernant le site internet, contactez nous : <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
-		</footer>
+                    </div><!-- col-md-6 -->
+                </div><!-- row -->
+            </div><!-- container-fluid -->
+            <hr>
+            <p>Pour toute question ou commentaire concernant le site internet, contactez nous : <a href="mailto:physum.ce@gmail.com" target="_blank" class="glyphicon glyphicon-envelope"></a></p>
+        </footer>
 
 
 
-		<!-- Scripts à la fin pour accélérer le chargement -->
-		<!-- librairie jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- librairie bootstrap -->
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- smooth scroll -->
-		
-		
+        <!-- Scripts à la fin pour accélérer le chargement -->
+        <!-- librairie jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- librairie bootstrap -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- smooth scroll -->
+        
+        
 
-		<script>
-			$(document).ready(function(){
-				// Add smooth scrolling to all links in navbar + footer link
-				$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-				  
-				  if(!$( this ).attr( 'href' ).match(/^#/)) return;
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                  
+                  if(!$( this ).attr( 'href' ).match(/^#/)) return;
 
-					// Prevent default anchor click behavior
-					event.preventDefault();
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-					// Store hash
-					var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-					// Using jQuery's animate() method to add smooth page scroll
-					// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top -45
-					}, 900, function(){
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top -45
+                    }, 900, function(){
 
-						// Add hash (#) to URL when done scrolling (default click behavior)
-						window.location.hash = hash;
-					});
-				});
-			})
-		</script>
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                });
+            })
+        </script>
 
 
 
-	</body>
+    </body>
 </html>
